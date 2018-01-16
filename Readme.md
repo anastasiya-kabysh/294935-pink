@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Anastasiya Kabysh](https://up.htmlacademy.ru/adaptive/13/user/294935).
-* Наставник: `Неизвестно`.
+* Наставник: `Василика Климова`.
 
 ---
 
