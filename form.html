@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>Pink: конкурс</title>
+  </head>
+
+  <body class="">
+    <svg viewBox="0 0 120 120" id="preloader" class="svg-preloader">
+        <symbol id="s-circle">
+          <circle r="10" cx="10" cy="10"></circle>
+        </symbol>
+        <g id="circle" class="g-circles">
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+          <use xlink:href="#s-circle" class="u-circle"></use>
+        </g>
+      </svg>
+    <header id="header" class="page-header page-header--js">
+      <div class="container">
+        <div class="page-header__inner">
+          <div class="page-header__logo">
+            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--header">Pink</a>
+            </div>
+          </div>
+          <div class="page-header__btn-burger page-header__btn-burger--show"><span></span>
+          </div>
+          <nav class="navigation navigation--closed navigation--positioned">
+            <ul class="navigation__list">
+              <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a>
+              </li>
+              <li class="navigation__item"><a href="photo.html" class="navigation__link">Фотографии</a>
+              </li>
+              <li class="navigation__item"><a class="navigation__link navigation__link--active">Конкурс</a>
+              </li>
+              <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="page-content">
+      <div class="heading">
+        <div class="heading__wrap">
+          <h2 class="heading__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
+            </h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="description">
+          <h2 class="description__title">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;— 1000 миль на вашу бонусную карту!<span class="description__addition"> Пожалуйста, заполните форму ниже:</span>
+            </h2>
+        </div>
+        <form action="/echo" method="post" class="form">
+          <div class="form__fieldset form__fieldset--name">
+            <div class="form__item form__item--name">
+              <div class="form-group">
+                <label for="form-user-name" class="form-group__label">Имя:
+                  </label><input name="form-user-name" id="form-user-name" placeholder="Введите ваше имя" class="form-group__input" type="text">
+              </div>
+            </div>
+            <div class="form__item form__item--name">
+              <div class="form-group">
+                <label for="form-user-surname" class="form-group__label">Фамилия:
+                  </label><input name="form-user-surname" id="form-user-surname" placeholder="Укажите фамилию" class="form-group__input" type="text">
+              </div>
+            </div>
+            <div class="form__item form__item--name">
+              <div class="form-group">
+                <label for="form-user-lastname" class="form-group__label">Отчество:
+                  </label><input name="form-user-lastname" id="form-user-lastname" placeholder="Ну и отчество тоже" class="form-group__input" type="text">
+              </div>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--os form__fieldset form__fieldset--gray">
+            <h2 class="form__title form__title--os">С&nbsp;каким приложением путешествовали?
+              </h2>
+            <div class="form__item form__item--os">
+              <div class="radio"><input name="OS" id="radio-OS-1" value="radio-OS-1" checked="checked" class="radio__input" type="radio">
+                <label for="radio-OS-1" class="radio__label">Pink для iOS
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--os">
+              <div class="radio"><input name="OS" id="radio-OS-2" value="radio-OS-2" class="radio__input" type="radio">
+                <label for="radio-OS-2" class="radio__label">Pink на Android
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--os">
+              <div class="radio"><input name="OS" id="radio-OS-3" value="radio-OS-3" class="radio__input" type="radio">
+                <label for="radio-OS-3" class="radio__label">Windows Phone
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--contacts">
+            <h2 class="form__title form__title--contacts">Контантная информация
+              </h2>
+            <div class="form__item form__item--contacts">
+              <div class="form-group form-group--reverse">
+                <label for="form-user-phone" class="form-group__label">Номер телефона
+                  </label>
+                <div class="form-group__wrap form-group__wrap--phone"><input name="form-user-phone" id="form-user-phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" class="form-group__input" type="tel">
+                </div>
+              </div>
+            </div>
+            <div class="form__item form__item--contacts">
+              <div class="form-group form-group--reverse">
+                <label for="form-user-email" class="form-group__label">Адрес почты
+                  </label>
+                <div class="form-group__wrap form-group__wrap--email"><input name="form-user-email" id="form-user-email" placeholder="Введите почту" class="form-group__input" type="email">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--achievements form__fieldset form__fieldset--gray">
+            <h2 class="form__title form__title--achievements">Ваши безбашенные достижения в&nbsp;путешествии
+              </h2>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-4" value="checkbox-achievements-4" checked="checked" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-4" class="checkbox__label">Сделал селфи с акулой
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-5" value="checkbox-achievements-5" checked="checked" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-5" class="checkbox__label">Обгорел на пляже
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-6" value="checkbox-achievements-6" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-6" class="checkbox__label">Видел Чака Норриса
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-7" value="checkbox-achievements-7" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-7" class="checkbox__label">Накупил сувениров
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-8" value="checkbox-achievements-8" checked="checked" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-8" class="checkbox__label">Удержал башню
+                  </label>
+              </div>
+            </div>
+            <div class="form__item form__item--achievements">
+              <div class="checkbox"><input name="achievements" id="checkbox-achievements-9" value="checkbox-achievements-9" class="checkbox__input" type="checkbox">
+                <label for="checkbox-achievements-9" class="checkbox__label">Разгромил отель
+                  </label>
+              </div>
+            </div>
+          </div>
+          <div class="form__fieldset form__fieldset--textarea">
+            <h2 class="form__title form__title--textarea">Опишите свои эмоции
+              </h2><textarea placeholder="Можно прям в красках, не стесняясь в выражениях" name="user-recall" id="user-recall" class="form__textarea"></textarea>
+          </div>
+          <div class="form__btn-wrap">
+            <button type="submit" class="form__btn btn btn--form">Отправить форму
+              </button><span class="form__footnote"><span class="form__color">*</span>&nbsp;— обязательные поля</span>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="page-footer false">
+      <div class="container">
+        <div class="page-footer__inner">
+          <div class="page-footer__item page-footer__item--logo">
+            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink
+  </a>
+            </div>
+          </div>
+          <div class="page-footer__item page-footer__item--social">
+            <div class="social"><a href="#" title="twitter" class="social__link">twitter
+              </a><a href="#" title="facebook" class="social__link">facebook
+                </a><a href="#" title="youtube" class="social__link">youtube
+              </a>
+            </div>
+          </div>
+          <div class="page-footer__item page-footer__item--copyright">
+            <div class="copyright"><a href="#" title="HTML Academy" class="copyright__link">Разработано
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
