@@ -1,0 +1,111 @@
+.photos {
+margin-bottom: -20px;
+}
+.photos__item, .photos__item-best {
+margin-bottom: 20px;
+}
+.photo--best {
+background-color: transparent;
+width: 100%;
+max-width: none;
+.photo__inner--best {
+    max-width: 280px;
+    margin: 0 auto;
+    background-color: @grey-color;
+}
+}
+.photo {
+min-width: 280px;
+max-width: 280px;
+background-color: @grey-color;
+font-size: @font-size-small;
+color: @dark-blue-color;
+display: flex;
+flex-direction: column;
+ .photo__inner {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px 20px;
+    .photo__header {
+     overflow: hidden;
+     text-overflow: ellipsis;
+        .photo__name {
+        font-size: @font-size-small;
+        line-height: 1.71429;
+        font-weight: @font-wiegnt-bold;
+        font-style: normal;}
+        .photo__time {
+        font-size: @font-size-small;
+        text-transform: uppercase;}}
+     .photo__comment {
+      margin: 0;
+      margin-bottom: 0px;
+      margin-bottom: 10px;
+      font-size: @font-size-medium;
+      line-height: 1.71429;
+      }
+     .photo__footer {
+     position: relative;
+     max-width: 280px;
+     padding-left: 31px;
+     overflow: hidden;
+     text-overflow: ellipsis;
+       .photo__like-link {
+       font: 0/0 a;
+       color: transparent;
+       text-shadow: none;
+        position: absolute;
+       right: 100%;
+       top: 50%;
+        margin-top: -1px;
+        transform: translate(100%,-50%);
+        }
+        .photo__like {
+        font-size: @font-size-smallest;
+        line-height: 2;
+        text-transform: uppercase;
+         color: @pink-color;
+         cursor: default;}
+         }
+}
+}
+.photo__identifier-wrap {
+margin: 0 auto;
+min-width: 320px;
+max-width: 1020px;
+padding-left: 20px;
+padding-right: 20px;
+position: relative;
+    .photo__identifier {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    display: block;
+    min-width: 140px;
+    height: 36px;
+    padding: 6px 20px;
+    text-align: center;
+    font-size:@font-size-smallest;
+    font-weight: @font-wiegnt-bold;
+    line-height: 2;
+    text-transform: uppercase;
+    cursor: default;
+    color: @white-color;
+    background-color: @pink-color;}
+}
+.photos__grid {
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+margin-left: -10px;
+margin-right: -10px;
+.photos__item {
+flex-grow: 0;
+flex-shrink: 0;
+width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+display: flex;
+justify-content: center;}
+}

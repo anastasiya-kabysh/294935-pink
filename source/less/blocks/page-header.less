@@ -1,0 +1,71 @@
+.page-header{
+position: relative;
+z-index: 100;
+width: 100%;
+background-color:@dark-blue-color;
+  min-height: 110px;
+
+.page-header__inner {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+min-height: 110px;
+
+.page-header__logo {
+padding-top: 21px;
+min-height: 66px;
+}
+}
+}
+.page-header__btn-burger {
+    cursor: pointer;
+}
+.page-header__btn-burger--show {
+display: block;
+}
+.page-header__btn-burger {
+position: absolute;
+top: 0;
+right: -20px;
+display: none;
+height: 66px;
+width: 90px;
+cursor: pointer;
+transition: all .3s;
+}
+.page-header__btn-burger span, .page-header__btn-burger span::after, .page-header__btn-burger span::before {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: @white-color;
+    transition: all .35s ease-in-out;
+}
+page-header__btn-burger span::before {
+    right: 0;
+    top: 10px;
+}
+media@only screen (and max-width:699px){
+  .page-header, .page-header__inner {
+    min-height: 66px;
+}
+media@only screen (and min-width:1020px){
+.page-header {
+    position: absolute;
+    top: 0;
+    margin-bottom: -110px;
+    min-height: 110px;
+    background-color: rgba(0,0,0,.3);
+.page-header__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 110px;
+    .page-header__logo {
+    padding-top: 27px;
+    min-height: 110px;
+    .logo__letter--mobile, .page-header__btn-burger {
+    display: none;
+}
+}
+}
+}
