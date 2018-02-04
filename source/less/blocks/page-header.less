@@ -45,11 +45,11 @@ page-header__btn-burger span::before {
     right: 0;
     top: 10px;
 }
-media@only screen (and max-width:699px){
+@media only screen and (max-width:699px){
   .page-header, .page-header__inner {
-    min-height: 66px;
+    min-height: 66px;}
 }
-media@only screen (and min-width:1020px){
+@media only screen and (min-width:1020px){
 .page-header {
     position: absolute;
     top: 0;
@@ -59,13 +59,11 @@ media@only screen (and min-width:1020px){
 .page-header__inner {
     flex-direction: row;
     justify-content: space-between;
-    min-height: 110px;
+    min-height: 110px;}
     .page-header__logo {
     padding-top: 27px;
-    min-height: 110px;
+    min-height: 110px;}
     .logo__letter--mobile, .page-header__btn-burger {
-    display: none;
-}
-}
+    display: none;}
 }
 }
