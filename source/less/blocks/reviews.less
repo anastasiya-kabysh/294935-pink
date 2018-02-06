@@ -1,19 +1,111 @@
-.reviews{
-position: relative;
+.reviews {
+  padding-top: 41px;
+  padding-bottom: 30px;
+
+  .reviews__arrow,
+  .reviews__input,
+  .reviews__item {
+    display: none;
+  }
+
+  .reviews__input[id="toggle-reviews-1"]:checked ~ .reviews__item--1,
+  .reviews__input[id="toggle-reviews-2"]:checked ~ .reviews__item--2,
+  .reviews__input[id="toggle-reviews-3"]:checked ~ .reviews__item--3 {
+    display: block;
+  }
+
+  .reviews__toggles {
+    margin-top: 36px;
+    text-align: center;
+
+    .reviews__toggle {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      display: inline-block;
+      vertical-align: top;
+      width: 6px;
+      height: 6px;
+      margin-right: 14px;
+      border-radius: 50%;
+      background-color: rgba(40,54,69,.3);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .reviews__input[id="toggle-reviews-1"]:checked ~ .reviews__toggles .reviews__toggle--1,
+    .reviews__input[id="toggle-reviews-2"]:checked ~ .reviews__toggles .reviews__toggle--2,
+    .reviews__input[id="toggle-reviews-3"]:checked ~ .reviews__toggles .reviews__toggle--3 {
+      box-shadow: 0 0 0 3px @dark-blue-color;
+    }
+
+    .reviews__toggle:last-child {
+      margin-right: 0;
+    }
+  }
 }
-.reviews__toggles {
-margin-top: 36px;
-text-align: center;
+
+.comment {
+  text-align: center;
+
+  .comment__text {
+    font-size: @font-size-small;
+    line-height: 2.14286;
+  }
+
+  .comment__author {
+    font-size: @font-size-medium;
+    line-height: 1.66667;
+    font-style: normal;
+    font-weight: @font-wiegnt-bold;
+    color: @black-color;
+  }
 }
-.comment{ text-align: center;}
-.comment__author{
-display: block;
+@media only screen and (@tablet-width) {
+  .comment__about-author {
+    display: none;
+  }
 }
-.comment__text {
-font-size: @font-size-medium;
-line-height: 2.14286;
-}
-.reviews__toggles{
-display: block;
-text-align: center;
+@media only screen and (@full-desktop-width) {
+  .reviews {
+    position: relative;
+    padding-top: 167px;
+    padding-bottom: 35px;
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 72px;
+
+    .reviews__toggle::after,
+    .reviews__toggle::before {
+      content: "";
+      display: none;
+      position: absolute;
+      top: 219px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      border-bottom: 2px solid rgba(40,54,69,.3);
+      border-right: 2px solid rgba(40,54,69,.3);
+      background-color: transparent;
+    }
+
+    .reviews__toggle::after {
+      right: 5px;
+      transform: rotate(-45deg);
+    }
+
+    .reviews__toggle::before {
+      left: 5px;
+      transform: rotate(135deg);
+    }
+
+    .reviews__input:first-of-type:checked ~ .reviews__toggles .reviews__toggle--3::before,
+    .reviews__input:last-of-type:checked ~ .reviews__toggles .reviews__toggle--1::after,
+    .reviews__input[id="toggle-reviews-1"]:checked ~ .reviews__toggles .reviews__toggle--2::after,
+    .reviews__input[id="toggle-reviews-2"]:checked ~ .reviews__toggles .reviews__toggle--1::before,
+    .reviews__input[id="toggle-reviews-2"]:checked ~ .reviews__toggles .reviews__toggle--3::after,
+    .reviews__input[id="toggle-reviews-3"]:checked ~ .reviews__toggles .reviews__toggle--2::before {
+      display: block;
+    }
+  }
 }

@@ -1,0 +1,30 @@
+.info-title {
+  padding-top: 40px;
+  padding-bottom: 35px;
+  text-align: center;
+
+  .info-title__title {
+    margin: 0;
+    font-weight: @font-weight-small;
+    font-size: @font-size-bigger;
+    line-height: 1.25;
+
+    .info-title__part {
+      display: block;
+    }
+  }
+}
+@media only screen and (@full-desktop-width) {
+  .info-title {
+    padding-top: 67px;
+    padding-bottom: 78px;
+
+    .info-title__title {
+      font-size: @font-size-biggest;
+      line-height: 1.2;
+
+      .info-title__part {
+        padding-right: 60px;
+      }
+    }
+  }

@@ -1,38 +1,75 @@
 .contacts {
-text-align: center;
-padding-top: 42px;
-padding-bottom: 36px;
-text-align: center;
+  padding-top: 42px;
+  padding-bottom: 36px;
+  text-align: center;
+
+  .contacts__headling {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: @font-size-bigger;
+    line-height: 1.25;
+  }
+
+  .contacts__item--email {
+    margin-bottom: 21px;
+  }
+
+  .contacts__item--phone {
+    margin-bottom: 14px;
+  }
+
+  .contacts__title {
+    display: block;
+    font-size: @font-size-medium;
+    line-height: 1.66667;
+    font-weight: @font-wiegnt-bold;
+  }
+
+  .contacts__description {
+    margin: 0;
+    text-decoration: none;
+    font-size: @font-size-bigger;
+    line-height: 1.25;
+    font-weight: @font-weight-small;
+    color: @pink-color;
+  }
+
+  .contacts__description--link {
+    color: @pink-color;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
 }
-.contacts__headling {
-width: 100%;
-margin-top: 0;
-margin-bottom: 30px;
-font-size: @font-size-bigger;
-line-height: 1.25;
-}
-.contacts__item--phone {
-margin-bottom: 14px;
-}
-.contacts__title {
-display: block;
-font-size: 18px;
-line-height: 1.66667;
-font-weight:@font-wiegnt-bold;
-}
-.contacts__description--link {
-color: @pink-color;
-text-decoration: none;
-transition: all .3s;
-}
-.contacts__description {
-margin: 0;
-text-decoration: none;
-font-size: @font-size-bigger;
-line-height: 1.25;
-font-weight:@font-weight-small;
-color: @pink-color;
-}
-.contacts__item--email {
-margin-bottom: 21px;
+@media only screen and (@full-desktop-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+    padding-bottom: 18px;
+
+    .contacts__headling {
+      margin-bottom: 53px;
+      font-size: @font-size-biggest;
+      line-height: 1.2;
+    }
+
+    .contacts__item {
+      width: 300px;
+      margin-bottom: 0;
+
+      .contacts__title {
+        margin-bottom: 21px;
+      }
+    }
+
+    .contacts__item--email {
+      order: 4;
+    }
+
+    .contacts__item--address {
+      order: 3;
+    }
+  }
 }

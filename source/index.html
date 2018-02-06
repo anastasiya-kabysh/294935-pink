@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
-    <link rel="stylesheet" href="source/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -35,13 +35,13 @@
           <div class="downloads__wrap"><a href="#" class="downloads__btn btn btn--download">Скачать приложение</a>
             <div class="downloads__link-wrap"><a href="#" title="itunes" class="downloads__link">apple
                 <svg class="downloads__svg downloads__svg--itunes svg-logo-apple">
-                  <use xlink:href="source/img/logo-apple.svg#logo-apple"></use>
+                  <use xlink:href="../img/logo-apple.svg#logo-apple"></use>
                 </svg></a><a href="#" title="android" class="downloads__link">android
                 <svg class="downloads__svg downloads__svg--itunes svg-logo-android">
-                  <use xlink:href="img/svg-sprite.svg#logo-android"></use>
+                  <use xlink:href="../img/logo-android.svg#logo-android"></use>
                 </svg></a><a href="#" title="windows" class="downloads__link">windows
                 <svg class="downloads__svg downloads__svg--itunes svg-logo-microsoft">
-                  <use xlink:href="img/svg-sprite.svg#logo-microsoft"></use>
+                  <use xlink:href="../img/logo-microsoft.svg#logo-microsoft"></use>
                 </svg></a>
             </div>
             <p class="downloads__text">Доступно для iPhone, iPad, Android, Windows Phone, OS&nbsp;X, Windows&nbsp;8
@@ -109,8 +109,10 @@
       </div>
       <div class="box">
         <div class="container">
-          <div class="reviews"><input id="toggle-reviews-1" name="reviews" checked="checked" class="reviews__input" type="radio"><input id="toggle-reviews-2" name="reviews" class="reviews__input" type="radio"><input id="toggle-reviews-3" name="reviews" class="reviews__input"
-              type="radio">
+          <div class="reviews">
+            <input id="toggle-reviews-1" name="reviews" checked="checked" class="reviews__input" type="radio">
+            <input id="toggle-reviews-2" name="reviews" class="reviews__input" type="radio">
+            <input id="toggle-reviews-3" name="reviews" class="reviews__input" type="radio">
             <div class="reviews__item reviews__item reviews__item--1">
               <blockquote class="comment">
                 <p class="comment__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!
@@ -153,8 +155,10 @@
         </div>
       </div>
       <div class="box box--gray">
-        <div class="tariffs"><input id="toggle-tariffs-1" name="tariffs" class="tariffs__input" type="radio"><input id="toggle-tariffs-2" name="tariffs" checked="checked" class="tariffs__input" type="radio"><input id="toggle-tariffs-3" name="tariffs" class="tariffs__input"
-            type="radio">
+        <div class="tariffs">
+          <input id="toggle-tariffs-1" name="tariffs" class="tariffs__input" type="radio">
+          <input id="toggle-tariffs-2" name="tariffs" checked="checked" class="tariffs__input" type="radio">
+          <input id="toggle-tariffs-3" name="tariffs" class="tariffs__input" type="radio">
           <table class="tariffs__table">
             <tbody>
               <tr class="tariffs__tr">
@@ -256,7 +260,13 @@
           </div>
         </div>
       </div>
-      <div class="map"></div>
+      <div id="map" class="map__image" style="position: relative; overflow: hidden;">
+        <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223" );>
+          <div class="gm-style" style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
+
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer page-footer--hide-mobile">
       <div class="container">

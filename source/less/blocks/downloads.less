@@ -1,0 +1,106 @@
+.downloads {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1020px;
+  background-color: @black-blue-color;
+  text-align: center;
+  color: @white-color;
+
+  .downloads-wrap {
+    min-height: 271px;
+    padding-top: 28px;
+
+    .btn--download {
+      color: @white-color;
+    }
+
+    .downloads__btn {
+      width: 280px;
+      margin: 0 auto 30px;
+    }
+
+    .downloads__link-wrap {
+      padding-left: 20px;
+      padding-right: 20px;
+
+      .downloads__link {
+        font: 0/0 a;
+        color: transparent;
+        text-shadow: none;
+        display: inline-block;
+        vertical-align: top;
+        color: #fff;
+        margin-right: 35px;
+        margin-bottom: 24px;
+      }
+    }
+
+    .downloads__text {
+      text-align: center;
+      font-weight: @font-weight-small;
+      line-height: 1.71429;
+    }
+  }
+}
+@media only screen and (@tablet-width) {
+  .downloads {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .downloads__text {
+      max-width: 280px;
+      margin: 0 auto;
+      font-size: @font-size-small;
+    }
+  }
+}
+@media only screen and (@full-tablet-width) {
+  .downloads {
+    background-color: transparent;
+
+    .downloads__wrap {
+      width: 300px;
+      padding-top: 30px;
+
+      .downloads__btn {
+        width: 300px;
+      }
+
+      .downloads__text {
+        font-size: @font-size-medium;
+        line-height: 1.33333;
+      }
+    }
+  }
+}
+@media only screen and (@full-desktop-width) {
+  .downloads {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1020px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .downloads__btn {
+      margin-bottom: 65px;
+    }
+
+    .btn--download {
+      font-size: 21px;
+      line-height: 1;
+    }
+
+    .downloads__link {
+      margin-bottom: 39px;
+    }
+  }
+
+  .downloads,
+  .heading__wrap {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
