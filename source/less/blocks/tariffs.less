@@ -108,7 +108,7 @@
     }
   }
 }
-@media only screen and (@tablet-width) {
+@media only screen and (max-width: @tablet-width) {
   .tariffs {
     overflow: hidden;
     padding-left: 20px;
@@ -150,7 +150,7 @@
     }
   }
 }
-@media only screen and (@full-tablet-width) {
+@media only screen and (min-width: @full-tablet-width) {
   .tariffs {
     margin: 0 auto;
     min-width: 320px;
@@ -189,13 +189,13 @@
     }
   }
 }
-@media only screen and (@full-tablet-width) and @media only screen and (@full-desktop-width) {
+@media only screen and (min-width: @full-tablet-width) and @media only screen and (min-width: @full-desktop-width) {
   .tariffs {
     padding-left: 40px;
     padding-right: 40px;
   }
 }
-@media only screen and (@full-desktop-width) {
+@media only screen and (min-width: @full-desktop-width) {
   .tariffs {
     padding-top: 154px;
     padding-bottom: 96px;

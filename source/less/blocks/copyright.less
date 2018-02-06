@@ -1,0 +1,25 @@
+.copyright {
+  .copyright__link {
+    position: relative;
+    padding-right: 41px;
+    font-size: @font-size-small;
+    line-height: 1.28571;
+    text-decoration: none;
+    color: @pink-color;
+
+    .copyright__logo-svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -41px;
+      margin-top: 3px;
+      fill: @pink-color;
+      transition: all 0.3s;
+    }
+  }
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .copyright__link {
+    font-size: @font-size-medium;
+  }
+}

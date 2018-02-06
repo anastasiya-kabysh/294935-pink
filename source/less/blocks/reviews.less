@@ -61,12 +61,12 @@
     color: @black-color;
   }
 }
-@media only screen and (@tablet-width) {
+@media only screen and (max-width: @tablet-width) {
   .comment__about-author {
     display: none;
   }
 }
-@media only screen and (@full-desktop-width) {
+@media only screen and (min-width: @full-desktop-width) {
   .reviews {
     position: relative;
     padding-top: 167px;

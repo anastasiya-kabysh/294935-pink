@@ -19,7 +19,7 @@
   line-height: 1.20833;
   font-weight: @font-weight-small;
 }
-@media only screen and (@tablet-width) {
+@media only screen and (max-width: @tablet-width) {
   .heading__wrap--index {
     min-height: 458px;
     background-image: url("../img/iphone-hand-mobile@1x.png),url(../img/bg-back-mobile@1x.jpg");
@@ -54,7 +54,7 @@
     }
   }
 }
-@media only screen and (@full-desktop-width) {
+@media only screen and (min-width: @full-desktop-width) {
   .heading {
     min-height: 280px;
     padding-top: 150px;

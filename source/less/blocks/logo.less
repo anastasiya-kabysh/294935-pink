@@ -1,25 +1,28 @@
-
 .logo {
-position: relative;
-color: @white-color;
-width: 150px;
+  position: relative;
+  color: @white-color;
+  width: 150px;
 }
+
 .logo__link--active {
-cursor: pointer;
+  cursor: pointer;
 }
+
 .logo__link {
-color: transparent;
-text-shadow: none;
-display: block;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  display: block;
 }
+
 .logo__svg {
-    width: 146.3px;
-    height: 40.375px;
+  width: 146.3px;
+  height: 40.375px;
 }
-@media only screen and (max-width:699px){
-.logo__link--header {
-width: 76px;
-overflow: hidden;
-height: 24px;
-}
+@media only screen and (max-width: @tablet-width) {
+  .logo__link--header {
+    width: 76px;
+    overflow: hidden;
+    height: 24px;
+  }
 }

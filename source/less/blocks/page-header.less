@@ -58,13 +58,13 @@ page-header__btn-burger span::before {
   right: 0;
   top: 10px;
 }
-@media only screen and @tablet-width) {
+@media only screen and (max-width: @tablet-width) {
   .page-header,
   .page-header__inner {
     min-height: 66px;
   }
 }
-@media only screen and (@full-desktop-width) {
+@media only screen and (min-width: @full-desktop-width) {
   .page-header {
     position: absolute;
     top: 0;
