@@ -386,3 +386,17 @@ textarea {
   background-color: @dark-green-color;
   color: hsla(0,0%,100%,.3);
 }
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1020px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
