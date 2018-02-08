@@ -1,0 +1,33 @@
+.description {
+  padding-top: 45px;
+  padding-bottom: 49px;
+  text-align: center;
+  color: @dark-blue-color;
+
+  .description__title {
+    margin: 0;
+    font-size: @font-size-small;
+    font-weight: @font-weight-medium;
+    line-height: 2.14286;
+  }
+}
+
+.description--small {
+  padding-top: 43px;
+  padding-bottom: 42px;
+}
+@media only screen and (max-width: @tablet-width) {
+  .description__addition {
+    display: none;
+  }
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .description {
+    padding: 92px 80px 88px;
+
+    .description__title {
+      font-size: @font-size-medium;
+      line-height: 1.66667;
+    }
+  }
+}
