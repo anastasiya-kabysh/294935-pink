@@ -1,0 +1,33 @@
+.page-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: @tablet-width) {
+  .page-footer__item {
+    margin-bottom: 38px;
+  }
+
+  .page-footer__item--social {
+    margin-bottom: 32px;
+  }
+
+  .page-footer__item--copyright {
+    margin-bottom: 55px;
+  }
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .page-footer__item--logo {
+    margin-top: -25px;
+  }
+
+  .page-footer__item--social {
+    margin-top: 5px;
+    margin-left: 11px;
+  }
+
+  .page-footer__item--copyright {
+    margin-bottom: 8px;
+  }
+}
