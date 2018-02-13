@@ -1,34 +1,39 @@
 .add-photo {
-    padding-top: 20px;
-    padding-bottom: 29px;
-    display: flex;
-    flex-direction: column;
-    .add-photo__image-wrap {
-    max-width: 280px;
-    margin: 0 auto;
-    margin-bottom: 42px;
-    .add-photo__image {
+  padding-top: 20px;
+  padding-bottom: 29px;
+  display: flex;
+  flex-direction: column;
+
+  .add-photo__svg-wrap {
+    position: relative;
     display: block;
-    width: 100%;
-    height: auto;
+    width: 45px;
+    height: 45px;
+  }
+
+  .add-photo__image-wrap {
+    max-width: 280px;
+    margin: 0 auto 42px;
+
+    .add-photo__image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
 }
-}
-}
-.add-photo__wrap-tools{
+
+.add-photo__wrap-tools {
   .add-photo__btns-wrap {
     text-align: center;
-    .btn--submit;
+
     .add-photo__btn {
-    width: 280px;
-    margin: 0 auto;
-}
-.add-photo__btn {
-    width: 280px;
-    margin: 0 auto;
-}
-.btn--reset;
-}
-.add-photo__tools {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+
+  .add-photo__tools {
     position: relative;
     display: flex;
     justify-content: center;
@@ -36,15 +41,164 @@
     min-height: 120px;
     padding-bottom: 50px;
     margin-bottom: 38px;
+
+    .add-photo__scale {
+      display: none;
+      position: absolute;
+      bottom: 35px;
+      right: 50%;
+      transform: translateX(50%);
+      height: 2px;
+      width: 240px;
+      background-color: @dark-blue-color;
+      cursor: default;
+    }
+
+    .add-photo__toggle {
+      position: absolute;
+      left: 80%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50px;
+      border: 2px solid #d22856;
+      background-color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .add-photo__scale--1 .add-photo__toggle {
+      left: 80%;
+    }
+
+    .add-photo__scale--2 .add-photo__toggle {
+      left: 13%;
+    }
+
+    .add-photo__scale--3 .add-photo__toggle {
+      left: 48%;
+    }
+
+    .add-photo__tool-svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      fill: rgba(40,54,69,.3);
+      transition: all 0.3s;
+    }
+
+    .add-photo__toggle--active,
+    .add-photo__toggle:active {
+      background-color: @pink-color;
+    }
+
     .add-photo__input {
-    display: none;
+      display: none;
+    }
+
+    .add-photo__label {
+      font: 0/0 a;
+      color: transparent;
+      text-shadow: none;
+      margin-right: 35px;
+      cursor: pointer;
+    }
+
+    .add-photo__label:last-of-type {
+      margin-right: 0;
+    }
+  }
 }
-.add-photo__label {
-    font: 0/0 a;
-    color: transparent;
-    text-shadow: none;
-    margin-right: 35px;
-    cursor: pointer;
+@media only screen and (max-width: @tablet-width) {
+  .add-photo__label:hover .add-photo__tool-svg {
+    fill: rgba(40,54,69,.5);
+  }
+
+  .add-photo__label:active .add-photo__tool-svg {
+    fill: @pink-color;
+  }
+
+  .add-photo__tools:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    right: -20px;
+    height: 1px;
+    width: auto;
+    background-color: #dddfe0;
+  }
+
+  .add-photo__btns-wrap {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .add-photo__btn {
+    margin-bottom: 12px;
+  }
 }
-}
+@media only screen and (min-width: @full-tablet-width) {
+  .add-photo__wrap-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .add-photo__tools {
+    flex-direction: column;
+    -ms-grid-row-align: stretch;
+    align-items: stretch;
+    margin: 0;
+    padding-bottom: 20px;
+    margin-top: -19px;
+  }
+
+  .add-photo__label {
+    position: relative;
+    height: 73px;
+    width: 100%;
+    padding-left: 3px;
+    cursor: default;
+  }
+
+  .add-photo__label:last-child {
+    height: 70px;
+  }
+
+  .add-photo__label:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 1px;
+    width: 100%;
+    background-color: #dddfe0;
+  }
+
+  .add-photo__scale {
+    display: block;
+    bottom: 33px;
+    transform: translateX(0);
+  }
+
+  .add-photo__scale--1 .add-photo__toggle {
+    left: 72%;
+  }
+
+  .add-photo__svg-wrap {
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    transform: translateY(50%);
+  }
+
+  .add-photo__tool-svg {
+    position: absolute;
+    transform: translateY(-50%);
+    fill: @pink-color;
+  }
 }

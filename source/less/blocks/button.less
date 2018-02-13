@@ -1,0 +1,94 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 13px 15px 15px;
+  text-decoration: none;
+  font-weight: @font-wiegnt-bold;
+  text-align: center;
+  border: 3px solid @white-color;
+  border-radius: 30px;
+  transition: all 0.3s;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn:hover {
+  background-color: @white-color;
+  color: @pink-color;
+}
+
+.btn:active {
+  color: rgba(210,40,86,.3);
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+}
+
+.btn--download {
+  color: @white-color;
+}
+
+.btn--submit {
+  background-color: @white-color;
+  border-color: @pink-color;
+  color: @pink-color;
+}
+
+.btn--submit:hover {
+  background-color: @pink-color;
+  color: @white-color;
+}
+
+.btn--submit:active {
+  background-color: @pink-color;
+  color: hsla(0,0%,100%,.3);
+}
+
+.btn--reset {
+  background-color: @white-color;
+  border-color: rgba(0,0,0,.1);
+  color: rgba(0,0,0,.1);
+}
+
+.btn--reset:hover {
+  border-color: rgba(0,0,0,.3);
+  color: rgba(0,0,0,.3);
+}
+
+.btn--reset:active {
+  background-color: rgba(0,0,0,.3);
+  border-color: rgba(0,0,0,.3);
+  color: hsla(0,0%,100%,.3);
+}
+
+.btn--form {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border: none;
+  border-radius: 2px;
+  background-color: @green-color;
+  text-transform: uppercase;
+  color: @white-color;
+}
+
+.btn--form:hover {
+  background-color: @dark-green-color;
+  color: @white-color;
+}
+
+.btn--form:active {
+  background-color: @dark-green-color;
+  color: hsla(0,0%,100%,.3);
+}
+
+.btn--in-progress {
+  animation-name: inProgress;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}

@@ -18,11 +18,29 @@
 .box--no-oblique {
   background-image: none;
 }
+
+.box--triangle:after {
+  content: "";
+  position: absolute;
+  z-index: 10;
+  min-height: 33px;
+  width: 100%;
+  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 33px;
+  background-position: left 50% bottom 0;
+}
+@media only screen and (max-width: @tablet-width) {
+  .box--gray-mobile {
+    background-color: @grey-color;
+  }
+}
 @media only screen and (min-width: @full-desktop-width) {
   .box--gray {
     background-size: 100% 91px;
   }
+
   .box--gray-desktop {
     background-color: @grey-color;
-}
+  }
 }

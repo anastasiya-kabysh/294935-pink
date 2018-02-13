@@ -22,6 +22,10 @@
         line-height: 1.33333;
       }
     }
+
+    .advantages__item:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 @media only screen and (max-width: @tablet-width) {
@@ -33,6 +37,13 @@
     .advantages__img {
       display: none;
     }
+  }
+
+  .advantages__item:last-child .advantages__img {
+    position: relative;
+    bottom: -42px;
+    display: block;
+    margin: -2px auto 0;
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
