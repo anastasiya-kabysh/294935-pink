@@ -3,113 +3,111 @@
   padding-bottom: 29px;
   display: flex;
   flex-direction: column;
-
-  .add-photo__svg-wrap {
-    position: relative;
-    display: block;
-    width: 45px;
-    height: 45px;
-  }
-
-  .add-photo__image-wrap {
-    max-width: 280px;
-    margin: 0 auto 42px;
-
-    .add-photo__image {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-  }
 }
 
-.add-photo__wrap-tools {
-  .add-photo__btns-wrap {
-    text-align: center;
+.add-photo__image-wrap {
+  max-width: 280px;
+  margin: 0 auto 42px;
+}
 
-    .add-photo__btn {
-      width: 280px;
-      margin: 0 auto;
-    }
-  }
+.add-photo__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
-  .add-photo__tools {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 120px;
-    padding-bottom: 50px;
-    margin-bottom: 38px;
+.add-photo__tools {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 120px;
+  padding-bottom: 50px;
+  margin-bottom: 38px;
+}
 
-    .add-photo__scale {
-      display: none;
-      position: absolute;
-      bottom: 35px;
-      right: 50%;
-      transform: translateX(50%);
-      height: 2px;
-      width: 240px;
-      background-color: @dark-blue-color;
-      cursor: default;
-    }
+.add-photo__label {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  margin-right: 35px;
+  cursor: pointer;
+}
 
-    .add-photo__toggle {
-      position: absolute;
-      left: 80%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 14px;
-      height: 14px;
-      border-radius: 50px;
-      border: 2px solid #d22856;
-      background-color: #fff;
-      cursor: pointer;
-      transition: all 0.3s;
-    }
+.add-photo__label:last-of-type {
+  margin-right: 0;
+}
 
-    .add-photo__scale--1 .add-photo__toggle {
-      left: 80%;
-    }
+.add-photo__input {
+  display: none;
+}
 
-    .add-photo__scale--2 .add-photo__toggle {
-      left: 13%;
-    }
+.add-photo__svg-wrap {
+  position: relative;
+  display: block;
+  width: 45px;
+  height: 45px;
+}
 
-    .add-photo__scale--3 .add-photo__toggle {
-      left: 48%;
-    }
+.add-photo__tool-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: rgba(40, 54, 69, .3);
+  transition: all 0.3s;
+}
 
-    .add-photo__tool-svg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      fill: rgba(40,54,69,.3);
-      transition: all 0.3s;
-    }
+.add-photo__scale {
+  display: none;
+  position: absolute;
+  bottom: 35px;
+  right: 50%;
+  transform: translateX(50%);
+  height: 2px;
+  width: 240px;
+  background-color: @dark-blue-color;
+  cursor: default;
+}
 
-    .add-photo__toggle--active,
-    .add-photo__toggle:active {
-      background-color: @pink-color;
-    }
+.add-photo__toggle {
+  position: absolute;
+  left: 80%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  border: 2px solid @pink-color;
+  background-color: @white-color;
+  cursor: pointer;
+  transition: all 0.3s;
+}
 
-    .add-photo__input {
-      display: none;
-    }
+.add-photo__scale--1 .add-photo__toggle {
+  left: 80%;
+}
 
-    .add-photo__label {
-      font: 0/0 a;
-      color: transparent;
-      text-shadow: none;
-      margin-right: 35px;
-      cursor: pointer;
-    }
+.add-photo__scale--2 .add-photo__toggle {
+  left: 13%;
+}
 
-    .add-photo__label:last-of-type {
-      margin-right: 0;
-    }
-  }
+.add-photo__scale--3 .add-photo__toggle {
+  left: 48%;
+}
+
+.add-photo__toggle--active,
+.add-photo__toggle:active {
+  background-color: @pink-color;
+}
+
+.add-photo__btns-wrap {
+  text-align: center;
+}
+
+.add-photo__btn {
+  width: 280px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: @tablet-width) {
   .add-photo__label:hover .add-photo__tool-svg {
@@ -139,6 +137,76 @@
 
   .add-photo__btn {
     margin-bottom: 12px;
+  }
+}
+@media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
+  .add-photo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .add-photo__image-wrap {
+    max-width: 300px;
+    margin: 0 20px 0 0;
+  }
+
+  .add-photo__image {
+    width: 100%;
+    height: auto;
+  }
+
+  .add-photo__svg-wrap {
+    width: 28px;
+    width: 100%;
+    height: 28px;
+    height: 100%;
+  }
+
+  .add-photo__wrap-tools {
+    width: 300px;
+    padding-left: 25px;
+  }
+
+  .add-photo__scale {
+    right: 18px;
+    width: 202px;
+  }
+
+  .add-photo__tool-svg {
+    left: 3px;
+  }
+
+  .add-photo__tool-svg--crop {
+    left: 2px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .add-photo__tool-svg--fill {
+    width: 24px;
+    height: 24px;
+    margin-top: 3px;
+  }
+
+  .add-photo__tool-svg--contrast {
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    margin-top: 1px;
+  }
+
+  .add-photo__btn {
+    width: 260px;
+    margin-right: 13px;
+    margin-bottom: 24px;
+  }
+
+  .add-photo__btn:last-child {
+    margin-bottom: 0;
   }
 }
 @media only screen and (min-width: @full-tablet-width) {
@@ -200,5 +268,76 @@
     position: absolute;
     transform: translateY(-50%);
     fill: @pink-color;
+  }
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .add-photo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 57px;
+    padding-bottom: 57px;
+    margin-bottom: 28px;
+    background-color: @grey-color;
+  }
+
+  .add-photo__image-wrap {
+    max-width: 300px;
+    margin: 0 90px 0 80px;
+  }
+
+  .add-photo__image {
+    width: 300px;
+    height: auto;
+  }
+
+  .add-photo__wrap-tools {
+    padding-left: 0;
+    width: 410px;
+  }
+
+  .add-photo__tool-svg {
+    left: 0;
+  }
+
+  .add-photo__tool-svg--crop {
+    left: -2px;
+    margin-top: 2px;
+  }
+
+  .add-photo__tool-svg--fill {
+    margin-top: 3px;
+  }
+
+  .add-photo__tool-svg--contrast {
+    left: 6px;
+    margin-top: 1px;
+  }
+
+  .add-photo__scale {
+    right: 30px;
+    width: 288px;
+  }
+
+  .add-photo__scale--1 .add-photo__toggle {
+    left: 25%;
+  }
+
+  .add-photo__scale--2 .add-photo__toggle {
+    left: 86%;
+  }
+
+  .add-photo__scale--3 .add-photo__toggle {
+    left: 56%;
+  }
+
+  .add-photo__btns-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .add-photo__btn {
+    width: 183px;
+    margin: 0;
   }
 }

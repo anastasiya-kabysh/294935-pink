@@ -14,42 +14,115 @@
   background-color: @white-color;
   text-align: center;
   display: none;
+}
 
-  .popup--demo,
-  .popup--show {
-    display: block;
-  }
+.popup--demo,
+.popup--show {
+  display: block;
+}
 
-  .popup--demo {
-    position: static;
-    margin: 50px auto;
-    transform: translate(0);
+.popup--demo {
+  position: static;
+  margin: 50px auto;
+  transform: translate(0);
+}
+
+.popup__title {
+  margin: 0 0 28px;
+  font-size: @font-size-medium;
+  line-height: 1.33333;
+  font-weight: 700;
+}
+
+.popup__text {
+  width: auto;
+  margin: 0 0 33px;
+  font-size: @font-size-small;
+  line-height: 1.71429;
+}
+
+.popup__btn-wrap {
+  width: auto;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-top: 48px;
+  background-color: @grey-color;
+}
+
+.popup__btn {
+  width: 280px;
+  margin-bottom: 51px;
+}
+@media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
+  .popup {
+    width: 460px;
+    padding-left: 70px;
+    padding-right: 70px;
   }
 
   .popup__title {
-    margin: 0 0 28px;
-    font-size: @font-size-medium;
+    font-size: @font-size-smaller-title;
     line-height: 1.33333;
-    font-weight: 700;
   }
 
   .popup__text {
     width: auto;
     margin: 0 0 33px;
-    font-size: @font-size-small;
-    line-height: 1.71429;
+    font-size: @font-size-medium;
+    line-height: 1.33333;
   }
 
   .popup__btn-wrap {
-    width: auto;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -70px;
+    margin-right: -70px;
     padding-top: 48px;
-    background-color: @grey-color;
   }
 
   .popup__btn {
-    width: 280px;
-    margin-bottom: 51px;
+    width: 300px;
+  }
+}
+@media only screen and (min-width: @full-desktop-width) {
+  .popup {
+    width: 460px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .popup__title {
+    font-size: @font-size-smaller-title;
+    line-height: 1.33333;
+  }
+
+  .popup__text {
+    width: auto;
+    margin: 0 0 33px;
+    font-size: @font-size-medium;
+    line-height: 1.33333;
+  }
+
+  .popup__btn-wrap {
+    margin-left: -70px;
+    margin-right: -70px;
+    padding-top: 48px;
+  }
+
+  .popup__btn {
+    width: 300px;
+  }
+
+  .popup--success {
+    width: 780px;
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+
+  .popup__btn-wrap {
+    margin-left: -180px;
+    margin-right: -180px;
+  }
+
+  .popup--success .popup__btn {
+    width: 460px;
   }
 }

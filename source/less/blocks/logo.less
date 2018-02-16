@@ -14,55 +14,108 @@
   text-shadow: none;
   display: block;
 }
-.logo__glasses,.logo__letter--tablet-desktop,.logo__star {
- display:none
+
+.logo__glasses,
+.logo__letter--tablet-desktop,
+.logo__star {
+  display: none;
 }
-.logo__glasses,.logo__letter,.logo__star {
- transition:all .3s
+
+.logo__glasses,
+.logo__letter,
+.logo__star {
+  transition: all 0.3s;
 }
+
 .logo__svg {
   width: 146.3px;
   height: 40.375px;
 }
+
 .logo__link--footer .logo__letter--mobile {
- display:none;
-}
-.logo__link--footer .logo__glasses--tablet,.logo__link--footer .logo__letter--tablet-desktop {
- display:block;
-}
-.logo__link--footer .logo__glasses {
- fill:@pink-color;
-}
-.logo__link--footer .logo__letter {
- fill:@black-color;
-}
-.logo__link--active:hover .logo__glasses,.logo__link--active:hover .logo__letter {
- fill:@pink-color;
-}
-.logo__link--active:hover .logo__star {
- animation-name:colorPulse;
- animation-duration:.6s;
- animation-iteration-count:infinite;
- animation-direction:alternate;
- animation-fill-mode:forwards;
-}
-.logo__link--active.logo__link--footer:hover .logo__star {
- animation-name:colorPulse-dark;
-}
-.logo__link--active:active .logo__glasses,.logo__link--active:active .logo__letter {
- fill:hsla(0,0%,100%,.3);
-}
-.logo__link--footer.logo__link--active:active .logo__letter {
- fill:rgba(0,0,0,.3);
-}
-.logo__link--footer.logo__link--active:active .logo__glasses {
- fill:rgba(210,40,86,.3);
+  display: none;
 }
 
+.logo__link--footer .logo__glasses--tablet,
+.logo__link--footer .logo__letter--tablet-desktop {
+  display: block;
+}
+
+.logo__link--footer .logo__glasses {
+  fill: @pink-color;
+}
+
+.logo__link--footer .logo__letter {
+  fill: @black-color;
+}
+
+.logo__link--active:hover .logo__glasses,
+.logo__link--active:hover .logo__letter {
+  fill: @pink-color;
+}
+
+.logo__link--active:hover .logo__star {
+  animation-name: colorPulse;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.logo__link--active.logo__link--footer:hover .logo__star {
+  animation-name: colorPulse-dark;
+}
+
+.logo__link--active:active .logo__glasses,
+.logo__link--active:active .logo__letter {
+  fill: hsla(0,0%,100%,.3);
+}
+
+.logo__link--footer.logo__link--active:active .logo__letter {
+  fill: rgba(0,0,0,.3);
+}
+
+.logo__link--footer.logo__link--active:active .logo__glasses {
+  fill: rgba(210,40,86,.3);
+}
 @media only screen and (max-width: @tablet-width) {
   .logo__link--header {
     width: 76px;
     overflow: hidden;
     height: 24px;
+  }
+}
+@media only screen and (min-width: @full-tablet-width) and (max-width:@tablet-width) {
+  .logo__letter--mobile {
+    display: none;
+  }
+
+  .logo__glasses--tablet,
+  .logo__letter--tablet-desktop {
+    display: block;
+  }
+}
+@media only screen and (max-width: @tablet-width) {
+  .logo__letter--mobile,
+  .page-header__btn-burger {
+    display: none;
+  }
+
+  .logo__letter--tablet-desktop {
+    display: block;
+  }
+
+  .logo__glasses--tablet,
+  .logo__link--footer .logo__glasses--tablet {
+    display: none;
+  }
+
+  .logo__glasses--desktop,
+  .logo__star {
+    display: block;
+  }
+
+  .logo__link--footer .logo__star--footer {
+    fill: @black-color;
   }
 }
