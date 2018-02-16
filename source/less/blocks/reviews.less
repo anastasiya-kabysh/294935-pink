@@ -42,11 +42,22 @@
     .reviews__toggle:last-child {
       margin-right: 0;
     }
+
+    .reviews__toggle:hover {
+      background-color: rgba(40,54,69,.6);
+    }
+
+    .reviews__toggle:active {
+      background-color: rgba(40,54,69,.1);
+    }
   }
 }
 
 .comment {
+  max-width: 700px;
+  margin: 0 auto;
   text-align: center;
+  color: @dark-blue-color;
 
   .comment__text {
     font-size: @font-size-small;
@@ -62,6 +73,26 @@
   }
 }
 @media only screen and (max-width: @tablet-width) {
+  .comment {
+    position: relative;
+    padding-top: 29px;
+  }
+
+  .comment__text:before {
+    content: "«";
+  }
+
+  .comment__text:after {
+    content: "»";
+  }
+
+  .comment__author {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   .comment__about-author {
     display: none;
   }

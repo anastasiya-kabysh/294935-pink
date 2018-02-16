@@ -18,6 +18,14 @@
     background-color: @white-color;
     transition: all 0.3s;
 
+    .social__link:hover {
+      border-color: @dark-blue-color;
+    }
+
+    .social__link:active {
+      border-color: rgba(40,54,69,.1);
+    }
+
     .social__svg {
       position: absolute;
       top: 50%;
@@ -37,8 +45,12 @@
       margin-top: -1px;
     }
   }
-}
 
-.social__link:last-child {
-  margin-right: 0;
+  .social__link:active .social__svg {
+    fill-opacity: 0.1;
+  }
+
+  .social__link:last-child {
+    margin-right: 0;
+  }
 }
