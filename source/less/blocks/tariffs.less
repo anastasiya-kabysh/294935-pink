@@ -171,43 +171,6 @@
     text-transform: uppercase;
   }
 }
-@media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
-  .tariffs th {
-    position: relative;
-    width: 25%;
-    height: 79px;
-    padding: 5px 20px 0;
-  }
-
-  .tariffs__title {
-    margin-bottom: -3px;
-    font-size: 16px;
-    line-height: 1.875;
-  }
-
-  .tariffs__price {
-    font-size: @font-size-medium;
-    line-height: 1.66667;
-  }
-
-  .tariffs__hit:before {
-    top: 5px;
-    left: -30px;
-  }
-}
-@media only screen and (min-width:@full-tablet-width) and (min-width:@full-tablet-width) and (max-width:@tablet-width) {
-  .tariffs {
-    min-width: 700px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media only screen and (min-width:@full-tablet-width) and (min-width:@full-desktop-width) {
-  .tariffs {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 @media only screen and (min-width: @full-tablet-width) {
   .tariffs {
     margin: 0 auto;
@@ -248,6 +211,53 @@
     left: 0;
   }
 }
+@media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
+  .tariffs th {
+    position: relative;
+    width: 25%;
+    height: 79px;
+    padding: 5px 20px 0;
+  }
+
+  .tariffs__title {
+    margin-bottom: -3px;
+    font-size: 16px;
+    line-height: 1.875;
+  }
+
+  .tariffs__price {
+    font-size: @font-size-medium;
+    line-height: 1.66667;
+  }
+
+  .tariffs__hit:before {
+    top: 5px;
+    left: -30px;
+  }
+}
+
+.svg-icon-no {
+  width: 27px;
+  height: 27px;
+}
+
+.svg-icon-yes {
+  width: 31px;
+  height: 21px;
+}
+@media only screen and (min-width:@full-tablet-width) and (min-width:@full-tablet-width) and (max-width:@tablet-width) {
+  .tariffs {
+    min-width: 700px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+@media only screen and (min-width:@full-tablet-width) and (min-width:@full-desktop-width) {
+  .tariffs {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
 @media (min-width: @full-tablet-width) and (min-width: @full-desktop-width) {
   .tariffs {
     padding-left: 40px;
@@ -256,7 +266,7 @@
 }
 @media only screen and (min-width: @full-desktop-width) {
   .tariffs {
-    padding-top: 154px;
+    padding-top: 100px;
     padding-bottom: 96px;
   }
 

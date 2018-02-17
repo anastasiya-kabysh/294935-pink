@@ -10,7 +10,7 @@
   </head>
 
   <body class="">
-    <header class="page-header">
+    <header class="page-header page-header--js">
       <div class="container">
         <div class="page-header__inner">
           <div class="page-header__logo">
@@ -105,7 +105,7 @@
           </div>
           <div class="page-header__btn-burger page-header__btn-burger--show"><span></span>
           </div>
-          <nav class="navigation navigation--positioned">
+          <nav id="nav" class="navigation navigation--closed navigation--positioned">
             <ul class="navigation__list">
               <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a>
               </li>
@@ -113,7 +113,7 @@
               </li>
               <li class="navigation__item"><a class="navigation__link navigation__link--active">Конкурс</a>
               </li>
-              <li class="navigation__item"><a href="https://htmlacademy.ru/" class="navigation__link">HTML Academy</a>
+              <li class="navigation__item"><a href="#" class="navigation__link">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -137,13 +137,13 @@
           <div class="form__fieldset form__fieldset--name">
             <div class="form__item form__item--name">
               <div class="form-group">
-                <label for="form-user-name" class="form-group__label">Имя:
+                <label for="form-user-name" class="form-group__label">Фамилия:
                 </label><input type="text" name="form-user-name" id="form-user-name" placeholder="Введите ваше имя" class="form-group__input">
               </div>
             </div>
             <div class="form__item form__item--name">
               <div class="form-group">
-                <label for="form-user-surname" class="form-group__label">Фамилия:
+                <label for="form-user-surname" class="form-group__label">Имя:
                 </label><input type="text" name="form-user-surname" id="form-user-surname" placeholder="Укажите фамилию" class="form-group__input">
               </div>
             </div>
@@ -183,7 +183,7 @@
               <div class="form-group form-group--reverse">
                 <label for="form-user-phone" class="form-group__label">Номер телефона
                 </label>
-                <div class="form-group__wrap form-group__wrap--phone"><input type="tel" name="form-user-phone" id="form-user-phone" placeholder="+7 ХХХ ХХХ-ХХ-ХХ" class="form-group__input">
+                <div class="form-group__wrap form-group__wrap--phone"><input type="tel" name="form-user-phone" id="form-user-phone" placeholder="Номер, пожалуйста" class="form-group__input">
                 </div>
               </div>
             </div>
@@ -207,25 +207,25 @@
             </div>
             <div class="form__item form__item--achievements">
               <div class="checkbox"><input type="checkbox" name="achievements" id="checkbox-achievements-5" value="checkbox-achievements-5" checked="checked" class="checkbox__input">
-                <label for="checkbox-achievements-5" class="checkbox__label">Обгорел на пляже
+                <label for="checkbox-achievements-5" class="checkbox__label">Видел Чака Норриса
                 </label>
               </div>
             </div>
             <div class="form__item form__item--achievements">
               <div class="checkbox"><input type="checkbox" name="achievements" id="checkbox-achievements-6" value="checkbox-achievements-6" class="checkbox__input">
-                <label for="checkbox-achievements-6" class="checkbox__label">Видел Чака Норриса
+                <label for="checkbox-achievements-6" class="checkbox__label">Удержал башню
                 </label>
               </div>
             </div>
             <div class="form__item form__item--achievements">
               <div class="checkbox"><input type="checkbox" name="achievements" id="checkbox-achievements-7" value="checkbox-achievements-7" class="checkbox__input">
-                <label for="checkbox-achievements-7" class="checkbox__label">Накупил сувениров
+                <label for="checkbox-achievements-7" class="checkbox__label">Обгорел на пляже
                 </label>
               </div>
             </div>
             <div class="form__item form__item--achievements">
               <div class="checkbox"><input type="checkbox" name="achievements" id="checkbox-achievements-8" value="checkbox-achievements-8" checked="checked" class="checkbox__input">
-                <label for="checkbox-achievements-8" class="checkbox__label">Удержал башню
+                <label for="checkbox-achievements-8" class="checkbox__label">Накупил сувениров
                 </label>
               </div>
             </div>
