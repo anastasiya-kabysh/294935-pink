@@ -6,13 +6,13 @@
 }
 
 .page-header--js {
-  background-color: rgba(0,0,0,.3);
-  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
 }
 
 .page-header--active {
   background-color: @dark-blue-color;
-  height: 76px;
+  position: relative;
 }
 
 .page-header__inner {
@@ -30,7 +30,7 @@
 .page-header__btn-burger {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 20px;
   display: none;
   height: 66px;
   width: 90px;
@@ -115,7 +115,6 @@
 
   .page-header--active {
     background-color: @dark-blue-color;
-    height: 120px;
   }
 
   .page-header__inner {
@@ -147,6 +146,8 @@
     flex-direction: row;
     justify-content: space-between;
     min-height: 110px;
+    margin: 0 auto;
+    width: 960px;
   }
 
   .page-header__logo {
