@@ -4,6 +4,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.logo_desktop {
+  display: none;
+}
+
 @media only screen and (max-width: @tablet-width) {
   .page-footer {
     padding-top: 40px;
@@ -48,6 +53,10 @@
   .page-footer__item--copyright {
     margin-bottom: 10px;
   }
+
+  .logo_desktop {
+    display: none;
+  }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .page-footer__inner {
@@ -59,6 +68,14 @@
 
   .page-footer__item--logo {
     margin-top: -25px;
+  }
+
+  .logo_tablet {
+    display: none;
+  }
+
+  .logo_desktop {
+    display: block;
   }
 
   .page-footer__item--social {
