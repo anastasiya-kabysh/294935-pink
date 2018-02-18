@@ -5,21 +5,33 @@
   "description": "Личный проект «Пинк» от HTML Academy",
   "devDependencies": {
     "autoprefixer": "7.2.x",
-    "grunt": "1.0.x",
-    "grunt-browser-sync": "2.2.x",
-    "grunt-contrib-less": "1.4.x",
-    "grunt-contrib-watch": "1.0.x",
-    "grunt-postcss": "0.9.x",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-less": "3.3.x",
+    "gulp-plumber": "1.1.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-webp": "^2.3.0",
     "@htmlacademy/editorconfig-cli": "1.x",
     "stylelint": "8.4.x",
-    "stylelint-config-htmlacademy": "0.1.x"
+    "stylelint-config-htmlacademy": "0.1.x",
+    "browser-sync": "2.18.x",
+    "del": "^3.0.0",
+    "posthtml-include": "^1.1.0",
+    "pump": "^1.0.2",
+    "run-sequence": "^2.2.0"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint 'source/less/**/*.less' --syntax less",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "grunt less && grunt postcss",
-    "start": "npm run build && grunt serve"
+    "build": "gulp build",
+    "start": "gulp serve"
   },
   "browserslist": [
     "last 2 versions",
