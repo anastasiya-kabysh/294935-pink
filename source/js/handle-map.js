@@ -1,4 +1,4 @@
-function mapHandler() {
+function handleMap() {
   var mapElement = document.getElementById('map');
   var latitude = mapElement.getAttribute('data-latitude');
   var longitude = mapElement.getAttribute('data-longitude');
