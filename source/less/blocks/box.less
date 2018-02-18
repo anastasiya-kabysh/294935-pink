@@ -5,7 +5,7 @@
 
 .box--gray {
   background-color: @grey-color;
-  background-image: url("../img/bg-triangle-white.svg");
+  background-image: url("../img/bg/bg-triangle-white.svg");
   background-repeat: no-repeat;
   background-size: 100% 25px;
   background-position: left 50% top 0;
@@ -25,7 +25,7 @@
   z-index: 10;
   min-height: 33px;
   width: 100%;
-  background-image: url("../img/bg-triangle-white-footer.svg");
+  background-image: url("../img/bg/bg-triangle-white-footer.svg");
   background-repeat: no-repeat;
   background-size: 100% 33px;
   background-position: left 50% bottom 0;
@@ -35,12 +35,36 @@
     background-color: @grey-color;
   }
 }
+@media only screen and (min-width: @full-tablet-width) and (max-width:@tablet-width) {
+  .box--gray {
+    background-size: 100% 55px;
+  }
+
+  .box--mobile {
+    background-color: transparent;
+  }
+
+  .box--triangle:after {
+    min-height: 73px;
+    background-size: 100% 73px;
+  }
+}
 @media only screen and (min-width: @full-desktop-width) {
   .box--gray {
     background-size: 100% 91px;
   }
 
+  .box--triangle:after {
+    min-height: 103px;
+    background-size: 100% 103px;
+  }
+
   .box--gray-desktop {
     background-color: @grey-color;
+  }
+
+  .box--mobile,
+  .box--no-desktop {
+    background-color: transparent;
   }
 }
