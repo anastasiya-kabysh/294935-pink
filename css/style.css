@@ -226,13 +226,13 @@ textarea {
 }
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: Open Sans;
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
@@ -829,6 +829,10 @@ body.preview:after {
   .page-header__btn-burger {
     display: none;
   }
+  .logo_desktop {
+    display: none;
+    margin-left: -11px;
+  }
   .logo__letter--tablet-desktop {
     display: block;
   }
@@ -923,8 +927,8 @@ body.preview:after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding-left: 5px;
-    padding-right: 5px;
+    margin-left: 11px;
+    margin-right: -5px;
   }
   .advantages__item {
     position: relative;
@@ -934,6 +938,7 @@ body.preview:after {
   .advantages__img {
     margin-top: -2px;
     margin-bottom: 51px;
+    margin-left: 5px;
   }
   .advantages__title {
     padding-left: 30px;
@@ -998,6 +1003,9 @@ body.preview:after {
 @media only screen and (min-width: 1020px) {
   .box--gray {
     background-size: 100% 91px;
+  }
+  .box--triangle {
+    padding-left: 19px;
   }
   .box--triangle:after {
     min-height: 103px;
@@ -1165,6 +1173,7 @@ body.preview:after {
 @media only screen and (min-width: 1020px) {
   .description {
     padding: 92px 80px 88px;
+    margin-left: 36px;
   }
   .description--small {
     padding-top: 59px;
@@ -1233,13 +1242,13 @@ body.preview:after {
 @media only screen and (min-width: 1020px) {
   .feature {
     min-height: 448px;
-    padding-left: 366px;
+    padding-left: 377px;
     padding-top: 130px;
     background-size: 300px 345px;
-    background-position: left 0 top 35px;
+    background-position: left 9px top 36px;
   }
   .feature__title {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
     font-size: 30px;
     line-height: 1;
   }
@@ -1891,12 +1900,6 @@ body.preview:after {
     padding-right: 40px;
   }
 }
-@media only screen and (min-width: 1020px) and (min-width: 1020px) {
-  .downloads,
-  .heading__wrap {
-    padding-left: 40px;
-  }
-}
 @media only screen and (min-width: 1020px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-width: 1020px) and (min-resolution: 1.5dppx) {
   .heading {
     background-image: url("../img/bg/bg-back-desktop.jpg");
@@ -1912,6 +1915,15 @@ body.preview:after {
     padding-bottom: 101px;
     background-position: top 0 left 50%;
   }
+  .downloads,
+  .heading__wrap {
+    padding-left: 49px;
+    padding-right: 40px;
+  }
+  .heading__wrap--photo {
+    padding-left: 74px;
+    padding-right: 40px;
+  }
   .heading,
   .heading--index {
     background-image: url("../img/bg/bg-back-desktop.jpg");
@@ -1921,7 +1933,7 @@ body.preview:after {
     min-height: 853px;
     padding-top: 195px;
     background-size: cover;
-    background-position: 50% 50%;
+    background-position: 49% 50%;
   }
   .heading--index:after {
     content: "";
@@ -1936,7 +1948,7 @@ body.preview:after {
     background-image: url("../img/intro/iphone-hand-desktop@1x.png");
     background-repeat: no-repeat;
     background-size: auto 645px;
-    background-position: bottom 0 right -85px;
+    background-position: bottom 0 right -95px;
   }
   .heading__wrap {
     margin: 0 auto;
@@ -2131,6 +2143,9 @@ body.preview:after {
 .page-header__btn-burger--show {
   display: block;
 }
+.page-header__btn-burger--hidden {
+  display: none;
+}
 .page-header__btn-burger span,
 .page-header__btn-burger span:after,
 .page-header__btn-burger span:before {
@@ -2255,9 +2270,6 @@ body.preview:after {
       -ms-flex-align: center;
           align-items: center;
 }
-.logo_desktop {
-  display: none;
-}
 @media only screen and (max-width: 699px) {
   .page-footer {
     padding-top: 40px;
@@ -2327,7 +2339,7 @@ body.preview:after {
   }
   .page-footer__item--social {
     margin-top: 5px;
-    margin-left: 11px;
+    margin-left: 18px;
   }
   .page-footer__item--copyright {
     margin-bottom: 8px;
@@ -2773,7 +2785,8 @@ body.preview:after {
     padding-bottom: 35px;
     background-image: url("../img/bg/quotes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 72px;
+    background-position: 51% 72px;
+    z-index: 2;
   }
   .reviews__toggles {
     display: block;
@@ -2803,11 +2816,13 @@ body.preview:after {
     left: 5px;
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
+    left: 15px;
   }
   .reviews__toggle:after {
     right: 5px;
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
+    right: -5px;
   }
   .reviews__input:first-of-type:checked ~ .reviews__toggles .reviews__toggle--3:before,
   .reviews__input:last-of-type:checked ~ .reviews__toggles .reviews__toggle--1:after,
@@ -3065,20 +3080,13 @@ body.preview:after {
 }
 @media only screen and (min-width: 700px) and (min-width: 1020px) {
   .tariffs {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (min-width: 700px) and (min-width: 1020px) {
-  .tariffs {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: 1020px) {
   .tariffs {
-    padding-top: 150px;
-    padding-bottom: 96px;
+    padding: 150px 30px 100px 48px;
   }
   .tariffs td {
     height: 60px;
@@ -3088,6 +3096,14 @@ body.preview:after {
   .tariffs__option {
     font-size: 18px;
     line-height: 1.66667;
+  }
+  .svg-icon-yes {
+    width: 31px;
+    height: 21px;
+    fill: #3dc644;
+  }
+  .box--gray--tariffs {
+    margin-top: -52px;
   }
 }
 .copyright__link {
@@ -3119,6 +3135,8 @@ body.preview:after {
 @media only screen and (min-width: 1020px) {
   .copyright__link {
     font-size: 18px;
+    top: 4px;
+    left: 8px;
   }
 }
 .downloads {
@@ -3262,7 +3280,7 @@ body.preview:after {
 @media only screen and (min-width: 1020px) and (min-width: 1020px) {
   .downloads,
   .heading__wrap {
-    padding-left: 40px;
+    padding-left: 49px;
     padding-right: 40px;
   }
 }
@@ -3308,6 +3326,7 @@ body.preview:after {
   .info-title__title {
     font-size: 50px;
     line-height: 1.2;
+    padding-left: 20px;
   }
   .info-title__part {
     padding-left: 60px;
@@ -3334,7 +3353,7 @@ body.preview:after {
 }
 @media only screen and (min-width: 700px) and (max-width: 1019px) {
   .map {
-    background-image: url("../img/bg/map-tablet-desktop.jpg");
+    background-image: url("../img/bg-map-tablet@1x.jpg");
   }
   .map__image {
     height: 379px;
@@ -3342,7 +3361,8 @@ body.preview:after {
 }
 @media only screen and (min-width: 1020px) {
   .map {
-    background-image: url("../img/bg/map-tablet-desktop.jpg");
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-position: 34% 58%;
   }
   .map__image {
     height: 502px;

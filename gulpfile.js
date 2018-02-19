@@ -21,7 +21,7 @@ gulp.task('uglify', function() {
   gulp.src('source/js/app.js')
     .pipe(uglify())
     .pipe(rename("app.min.js"))
-    .pipe(gulp.dest('js'))
+    .pipe(gulp.dest('build/js'))
 });
 
 gulp.task("style", function () {
@@ -48,7 +48,8 @@ gulp.task("serve", function () {
   });
 
   gulp.watch("source/less/**/*.less", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("source/js/*.js", ["uglify"]);
+  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("images", function () {
@@ -58,7 +59,7 @@ gulp.task("images", function () {
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("img"));
+    .pipe(gulp.dest("/build/img"));
 });
 
 gulp.task("html", function () {
@@ -88,7 +89,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/*min.js"
+    "source/js/scripts/*.js"
   ], {
     base: "./source/"
   })
@@ -96,9 +97,9 @@ gulp.task("copy", function () {
 });
 
 gulp.task("clean", function () {
-  return del("build");
+  return del("build/**/*");
 });
 
 gulp.task("build", function (done) {
-  run ("clean", "copy", "style", "sprite", "html", done);
+  run ("clean", "uglify", "images", "copy", "style", "sprite", "html", done);
 });
