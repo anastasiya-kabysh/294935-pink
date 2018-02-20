@@ -120,6 +120,10 @@
   width: 280px;
   margin: 0 auto;
 }
+.svg-icon-editor-crop svg{
+  width: 44px;
+  height: 44px;
+}
 
 .svg-icon-editor-contrast svg {
   width: 32px;
@@ -226,22 +230,6 @@
     margin-bottom: 0;
   }
 }
-
-.svg-icon-editor-crop svg {
-  width: 24px;
-  height: 24px;
-}
-
-.svg-icon-editor-fill svg {
-  width: 24px;
-  height: 24px;
-}
-
-.svg-icon-editor-contrast svg {
-  width: 16px;
-  height: 16px;
-  fill: @pink-color;
-}
 @media only screen and (min-width: @full-tablet-width) {
   .add-photo__wrap-tools {
     display: flex;
@@ -300,6 +288,21 @@
   .add-photo__tool-svg {
     position: absolute;
     transform: translateY(-50%);
+    fill: @pink-color;
+  }
+  .svg-icon-editor-crop svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-icon-editor-fill svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-icon-editor-contrast svg {
+    width: 16px;
+    height: 16px;
     fill: @pink-color;
   }
 }
@@ -374,7 +377,7 @@
     margin: 0;
   }
 
-  .svg-icon-editor-crop {
+  .svg-icon-editor-crop svg{
     width: 48px;
     height: 48px;
   }
@@ -384,8 +387,13 @@
     height: 253px;
   }
 
-  .svg-icon-editor-fill {
+  .svg-icon-editor-fill svg{
     width: 48px;
     height: 48px;
+  }
+  .svg-icon-editor-contrast svg {
+    width: 32px;
+    height: 32px;
+    fill: @pink-color;
   }
 }

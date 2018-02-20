@@ -41,9 +41,11 @@
 .page-header__btn-burger--show {
   display: block;
 }
-.page-header__btn-burger--hidden{
-  display:none;
+
+.page-header__btn-burger--hidden {
+  display: none;
 }
+
 .page-header__btn-burger span,
 .page-header__btn-burger span:after,
 .page-header__btn-burger span:before {
@@ -70,7 +72,7 @@
 .page-header__btn-burger span {
   top: 50%;
   transform: translateY(-50%);
-    right: 33px;
+  right: 33px;
 }
 
 .page-header__btn-burger span:after {
@@ -104,13 +106,19 @@
 .page-header__btn-burger--active span:after {
   transform: rotate(-45deg);
 }
+
+.page-header .page-header-btn-burger__cross--photo {
+  top: 45%;
+  right: -2px;
+}
 @media only screen and (max-width: @tablet-width) {
   .page-header,
   .page-header__inner {
     min-height: 66px;
   }
-  .page-header-btn-burger__cross--photo{
-        right: 14px;
+
+  .page-header-btn-burger__cross--photo {
+    right: 14px;
   }
 }
 @media only screen and (min-width: @full-tablet-width) and (max-width:@desktop-width) {
@@ -134,19 +142,24 @@
   .page-header__btn-burger {
     height: 110px;
   }
-  .page-header__btn-burger span{
-  right: 49px;
+
+  .page-header__btn-burger span {
+    right: 49px;
   }
-  .page-header__btn-burger  .page-header-btn-burger__cross--photo{
+
+  .page-header__btn-burger .page-header-btn-burger__cross--photo {
     right: 17px;
   }
-  .page-header__btn-burger  .page-header-btn-burger__cross--form{
+
+  .page-header__btn-burger .page-header-btn-burger__cross--form {
     right: 17px;
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
-  .logo__letter--mobile, .page-header__btn-burger {
-    display: none;}
+  .logo__letter--mobile,
+  .page-header__btn-burger {
+    display: none;
+  }
 
   .page-header {
     position: absolute;
@@ -155,8 +168,9 @@
     min-height: 110px;
     background-color: rgba(0, 0, 0, .3);
   }
-  .page-header__btn-burger .page-header-btn-burger__cross--index{
-        right: 57px;
+
+  .page-header__btn-burger .page-header-btn-burger__cross--index {
+    right: 57px;
   }
 
   .page-header__inner {
