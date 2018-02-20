@@ -16,25 +16,39 @@
 }
 
 .svg-icon-map-marker {
+  position: absolute;
   width: 35.983px;
   height: 35.983px;
 }
 @media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
   .map {
     background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-position: 51% 73%;
+    background-size: cover;
   }
 
   .map__image {
     height: 379px;
   }
+
+  .svg-icon-map-marker {
+    top: 53%;
+    left: 48%;
+  }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .map {
     background-image: url("../img/bg-map-desktop@1x.jpg");
-        background-position: 34% 58%;
+    background-position: 34% 58%;
   }
 
   .map__image {
     height: 502px;
+  }
+
+  .svg-icon-map-marker {
+    position: absolute;
+    top: 53%;
+    left: 49%;
   }
 }

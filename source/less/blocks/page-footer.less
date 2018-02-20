@@ -4,8 +4,6 @@
   justify-content: space-between;
   align-items: center;
 }
-
-
 @media only screen and (max-width: @tablet-width) {
   .page-footer {
     padding-top: 40px;
@@ -54,6 +52,11 @@
   .logo_desktop {
     display: none;
   }
+  .logo_tablet svg{
+    position: absolute;
+    left: 21px;
+    top: -18px;
+  }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .page-footer__inner {
@@ -61,6 +64,11 @@
     min-height: 225px;
     padding-top: 45px;
     padding-bottom: 65px;
+  }
+
+  .page-footer__inner--photo {
+    margin-right: 10px;
+    margin-left: -10px;
   }
 
   .page-footer__item--logo {
@@ -77,7 +85,7 @@
 
   .page-footer__item--social {
     margin-top: 5px;
-      margin-left: 18px;
+    margin-left: 18px;
   }
 
   .page-footer__item--copyright {

@@ -11,10 +11,10 @@
 
   <body class="">
     <header id="header" class="page-header page-header--js">
-      <div class="container">
+      <div class="container container__page-header--form">
         <div class="page-header__inner">
           <div class="page-header__logo">
-            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--header">Pink
+            <div class="logo logo--form"><a href="index.html" class="logo__link logo__link--active">Pink
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                class="logo__svg" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
@@ -105,7 +105,8 @@
 </a>
             </div>
           </div>
-          <div id="menu-button" class="page-header__btn-burger page-header__btn-burger--show js-toggle page-header__btn-burger--hidden"><span></span>
+          <div id="menu-button" class="page-header__btn-burger page-header__btn-burger--show js-toggle page-header__btn-burger--hidden">
+            <span class="page-header-btn-burger__cross page-header-btn-burger__cross--form"></span>
           </div>
           <nav id="nav" class="navigation navigation--positioned">
             <ul class="navigation__list">
@@ -123,14 +124,14 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="heading">
+      <div class="heading heading--form">
         <div class="heading__wrap">
           <h2 class="heading__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
             </h2>
         </div>
       </div>
       <div class="container">
-        <div class="description">
+        <div class="description description--form">
           <h2 class="description__title">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;— 1000 миль на вашу бонусную карту!
             <span class="description__addition"> Пожалуйста, заполните форму ниже:</span>
             </h2>
@@ -140,13 +141,13 @@
             <div class="form__item form__item--name">
               <div class="form-group">
                 <label for="form-user-name" class="form-group__label">Фамилия:
-                </label><input type="text" name="form-user-name" id="form-user-name" placeholder="Введите ваше имя" class="form-group__input">
+                </label><input type="text" name="form-user-name" id="form-user-name" placeholder="Укажите фамилию" class="form-group__input">
               </div>
             </div>
             <div class="form__item form__item--name">
               <div class="form-group">
                 <label for="form-user-surname" class="form-group__label">Имя:
-                </label><input type="text" name="form-user-surname" id="form-user-surname" placeholder="Укажите фамилию" class="form-group__input">
+                </label><input type="text" name="form-user-surname" id="form-user-surname" placeholder="Введите ваше имя" class="form-group__input">
               </div>
             </div>
             <div class="form__item form__item--name">
@@ -244,7 +245,8 @@
           </div>
           <div class="form__btn-wrap">
             <button type="submit" class="form__btn btn btn--form">Отправить форму
-            </button><span class="form__footnote"><span class="form__color">*</span>&nbsp;— обязательные поля</span>
+            </button><span class="form__footnote form__footnote--desktop"><span class="form__color">*</span>&nbsp;— обязательные для заполнения поля</span><span class="form__footnote form__footnote--tablet"><span class="form__color">*</span>&nbsp;—
+            обязательные поля</span>
           </div>
         </form>
       </div>
@@ -253,7 +255,7 @@
       <div class="container">
         <div class="page-footer__inner">
           <div class="page-footer__item page-footer__item--logo">
-            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink
+            <div class="logo logo__footer--form"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink
               <span class="logo_tablet"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
