@@ -120,8 +120,14 @@
   width: 280px;
   margin: 0 auto;
 }
+.svg-icon-editor-crop svg{
+  width: 44px;
+  height: 44px;
+}
 
-.svg-icon-editor-contrast {
+.svg-icon-editor-contrast svg {
+  width: 32px;
+  height: 32px;
   fill: rgba(40, 54, 69, 0.3);
 }
 @media only screen and (max-width: @tablet-width) {
@@ -209,8 +215,8 @@
 
   .add-photo__tool-svg--contrast {
     left: 8px;
-    width: 24px;
-    height: 24px;
+    width: 16px;
+    height: 16px;
     margin-top: 1px;
   }
 
@@ -223,21 +229,6 @@
   .add-photo__btn:last-child {
     margin-bottom: 0;
   }
-}
-
-.svg-icon-editor-crop svg {
-  width: 24px;
-  height: 24px;
-}
-
-.svg-icon-editor-fill svg {
-  width: 24px;
-  height: 24px;
-}
-
-.svg-icon-editor-fill svg {
-  width: 24px;
-  height: 24px;
 }
 @media only screen and (min-width: @full-tablet-width) {
   .add-photo__wrap-tools {
@@ -297,6 +288,21 @@
   .add-photo__tool-svg {
     position: absolute;
     transform: translateY(-50%);
+    fill: @pink-color;
+  }
+  .svg-icon-editor-crop svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-icon-editor-fill svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .svg-icon-editor-contrast svg {
+    width: 16px;
+    height: 16px;
     fill: @pink-color;
   }
 }
@@ -371,7 +377,7 @@
     margin: 0;
   }
 
-  .svg-icon-editor-crop {
+  .svg-icon-editor-crop svg{
     width: 48px;
     height: 48px;
   }
@@ -381,8 +387,13 @@
     height: 253px;
   }
 
-  .svg-icon-editor-fill {
+  .svg-icon-editor-fill svg{
     width: 48px;
     height: 48px;
+  }
+  .svg-icon-editor-contrast svg {
+    width: 32px;
+    height: 32px;
+    fill: @pink-color;
   }
 }

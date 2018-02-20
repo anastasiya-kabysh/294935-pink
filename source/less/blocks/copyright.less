@@ -14,6 +14,9 @@
   transition: all 0.3s;
 }
 
+
+
+
 .copyright__link:hover .copyright__logo-svg {
   fill: @dark-blue-color;
 }
@@ -22,8 +25,24 @@
   fill: @dark-blue-color;
   fill-opacity: 0.3;
 }
+@media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
+  .copyright__link {
+    left: -16px;
+    top: 5px;
+  }
+  .copiright__link--index{
+    left: -39px;
+    top: 5px;
+  }
+  .copyright__link--photo{
+    left: -41px;
+    top: 5px;
+  }
+}
 @media only screen and (min-width: @full-desktop-width) {
   .copyright__link {
     font-size: @font-size-medium;
+    top: 4px;
+    left: 8px;
   }
 }

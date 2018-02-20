@@ -5,10 +5,9 @@
   align-items: center;
 }
 
-.logo_desktop {
+.logo_desktop svg {
   display: none;
 }
-
 @media only screen and (max-width: @tablet-width) {
   .page-footer {
     padding-top: 40px;
@@ -54,8 +53,10 @@
     margin-bottom: 10px;
   }
 
-  .logo_desktop {
-    display: none;
+  .logo_tablet svg {
+    position: absolute;
+    left: 21px;
+    top: -18px;
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
@@ -64,6 +65,11 @@
     min-height: 225px;
     padding-top: 45px;
     padding-bottom: 65px;
+  }
+
+  .page-footer__inner--photo {
+    margin-right: 10px;
+    margin-left: -10px;
   }
 
   .page-footer__item--logo {
@@ -80,10 +86,14 @@
 
   .page-footer__item--social {
     margin-top: 5px;
-    margin-left: 11px;
+    margin-left: 18px;
   }
 
   .page-footer__item--copyright {
     margin-bottom: 8px;
+  }
+
+  .logo_desktop svg {
+    display: block;
   }
 }

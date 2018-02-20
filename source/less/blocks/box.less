@@ -7,8 +7,8 @@
   background-color: @grey-color;
   background-image: url("../img/bg/bg-triangle-white.svg");
   background-repeat: no-repeat;
-  background-size: 100% 25px;
-  background-position: left 50% top 0;
+  background-size: 100% 34px;
+      background-position: left 50% top -5px;
 }
 
 .box--gray-desktop {
@@ -35,7 +35,7 @@
     background-color: @grey-color;
   }
 }
-@media only screen and (min-width: @full-tablet-width) and (max-width:@tablet-width) {
+@media only screen and (min-width: @full-tablet-width) and (max-width:@desktop-width) {
   .box--gray {
     background-size: 100% 55px;
   }
@@ -53,7 +53,9 @@
   .box--gray {
     background-size: 100% 91px;
   }
-
+.box--triangle{
+  padding-left: 19px;
+}
   .box--triangle:after {
     min-height: 103px;
     background-size: 100% 103px;

@@ -4,7 +4,10 @@
   width: 150px;
   left: 20px;
 }
-
+.logo--photo {
+  left: -17px;
+  top: -3px;
+}
 .logo__link--active {
   cursor: pointer;
 }
@@ -29,12 +32,12 @@
 }
 
 .logo__svg {
-  width: 146.3px;
+  width: 220.3px;
   height: 40.375px;
 }
 
 .logo__link--footer .logo__letter--mobile {
-//  display: none;//
+  //  display: none;//
 }
 
 .logo__link--footer .logo__glasses--tablet,
@@ -82,8 +85,7 @@
 @media only screen and (max-width: @tablet-width) {
   .logo__link--header {
     width: 76px;
-  //  overflow: hidden;//
-  //  height: 24px; //
+
   }
 }
 @media only screen and (min-width: @full-tablet-width) and (max-width:@desktop-width) {
@@ -95,11 +97,33 @@
   .logo__letter--tablet-desktop {
     display: block;
   }
+
+  .logo--index {
+    left: 45px;
+  }
+
+  .logo--photo {
+    left: 3px;
+  }
+  .logo--form{
+        left: 3px;
+  }
+  .logo__footer--form{
+    left: 0;
+  }
+
 }
 @media only screen and (min-width: @full-desktop-width) {
   .logo__letter--mobile,
   .page-header__btn-burger {
     display: none;
+  }
+.logo--index{
+  left: -16px;
+}
+  .logo_desktop {
+    display: none;
+    margin-left: -11px;
   }
 
   .logo__letter--tablet-desktop {

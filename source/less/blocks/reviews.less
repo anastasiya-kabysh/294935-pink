@@ -1,6 +1,5 @@
 .reviews {
-  padding-top: 41px;
-  padding-bottom: 30px;
+  padding: 40px 32px 32px 37px;
 }
 
 .reviews__arrow,
@@ -100,6 +99,8 @@
     margin-bottom: 35px;
     font-size: @font-size-medium;
     line-height: 1.66667;
+    margin-left: 20px;
+    margin-right: 19px;
   }
 
   .comment__text:before {
@@ -129,7 +130,8 @@
     padding-bottom: 35px;
     background-image: url("../img/bg/quotes.svg");
     background-repeat: no-repeat;
-    background-position: 50% 72px;
+    background-position: 51% 72px;
+    z-index: 2;
   }
 
   .reviews__toggles {
@@ -163,11 +165,13 @@
   .reviews__toggle:before {
     left: 5px;
     transform: rotate(135deg);
+    left: 15px;
   }
 
   .reviews__toggle:after {
     right: 5px;
     transform: rotate(-45deg);
+    right: -5px;
   }
 
   .reviews__input:first-of-type:checked~.reviews__toggles .reviews__toggle--3:before,

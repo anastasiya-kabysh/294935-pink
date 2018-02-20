@@ -6,15 +6,15 @@
     <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <title>Pink: конкурс</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="">
     <header id="header" class="page-header page-header--js">
-      <div class="container">
+      <div class="container container__page-header--form">
         <div class="page-header__inner">
           <div class="page-header__logo">
-            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--header">Pink
+            <div class="logo logo--form"><a href="index.html" class="logo__link logo__link--active">Pink
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                class="logo__svg" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
@@ -105,9 +105,10 @@
 </a>
             </div>
           </div>
-          <div class="page-header__btn-burger page-header__btn-burger--show js-toggle"><span></span>
+          <div id="menu-button" class="page-header__btn-burger page-header__btn-burger--show js-toggle page-header__btn-burger--hidden">
+            <span class="page-header-btn-burger__cross page-header-btn-burger__cross--form"></span>
           </div>
-          <nav id="nav" class="navigation navigation--closed navigation--positioned">
+          <nav id="nav" class="navigation navigation--positioned">
             <ul class="navigation__list">
               <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a>
               </li>
@@ -123,14 +124,14 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="heading">
+      <div class="heading heading--form">
         <div class="heading__wrap">
           <h2 class="heading__title">Конкурс на&nbsp;самое безбашенное путешествие с&nbsp;Пинк
             </h2>
         </div>
       </div>
       <div class="container">
-        <div class="description">
+        <div class="description description--form">
           <h2 class="description__title">Поделитесь своей историей и&nbsp;получите шанс выиграть ценный приз&nbsp;— 1000 миль на вашу бонусную карту!
             <span class="description__addition"> Пожалуйста, заполните форму ниже:</span>
             </h2>
@@ -140,13 +141,13 @@
             <div class="form__item form__item--name">
               <div class="form-group">
                 <label for="form-user-name" class="form-group__label">Фамилия:
-                </label><input type="text" name="form-user-name" id="form-user-name" placeholder="Введите ваше имя" class="form-group__input">
+                </label><input type="text" name="form-user-name" id="form-user-name" placeholder="Укажите фамилию" class="form-group__input">
               </div>
             </div>
             <div class="form__item form__item--name">
               <div class="form-group">
                 <label for="form-user-surname" class="form-group__label">Имя:
-                </label><input type="text" name="form-user-surname" id="form-user-surname" placeholder="Укажите фамилию" class="form-group__input">
+                </label><input type="text" name="form-user-surname" id="form-user-surname" placeholder="Введите ваше имя" class="form-group__input">
               </div>
             </div>
             <div class="form__item form__item--name">
@@ -244,7 +245,8 @@
           </div>
           <div class="form__btn-wrap">
             <button type="submit" class="form__btn btn btn--form">Отправить форму
-            </button><span class="form__footnote"><span class="form__color">*</span>&nbsp;— обязательные поля</span>
+            </button><span class="form__footnote form__footnote--desktop"><span class="form__color">*</span>&nbsp;— обязательные для заполнения поля</span><span class="form__footnote form__footnote--tablet"><span class="form__color">*</span>&nbsp;—
+            обязательные поля</span>
           </div>
         </form>
       </div>
@@ -253,7 +255,7 @@
       <div class="container">
         <div class="page-footer__inner">
           <div class="page-footer__item page-footer__item--logo">
-            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink
+            <div class="logo logo__footer--form"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink
               <span class="logo_tablet"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
@@ -328,9 +330,9 @@
           </div>
           <div class="page-footer__item page-footer__item--copyright">
             <div class="copyright"><a href="#" title="HTML Academy" class="copyright__link">Разработано
-                <svg class="copyright__logo-svg svg-logo-htmlacademy" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewvox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
-                  <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
-                </svg></a>
+              <svg class="copyright__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
+              </svg></a>
             </div>
           </div>
         </div>
@@ -355,7 +357,7 @@
       </div>
     </div>
   </body>
-  <script src="js/svg4everybody.js"></script>
-  <script src="js/app.js"></script>
+  <script src="js/scripts/svg4everybody.js"></script>
+  <script src="js/app.min.js"></script>
 
 </html>

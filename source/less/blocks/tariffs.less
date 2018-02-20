@@ -107,6 +107,7 @@
   right: 19px;
   transform: translateY(-50%);
 }
+
 .svg-icon-no {
   width: 27px;
   height: 27px;
@@ -118,6 +119,7 @@
   height: 21px;
   fill: @color-icon-yes;
 }
+
 .tariffs__toggles {
   margin-top: 42px;
   text-align: center;
@@ -152,8 +154,8 @@
 @media only screen and (max-width: @tablet-width) {
   .tariffs {
     overflow: hidden;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 61px;
+    padding-right: 57px;
   }
 
   .tariffs__table {
@@ -186,7 +188,7 @@
     margin: 0 auto;
     min-width: 320px;
     max-width: 1020px;
-    padding: 91px 20px 67px;
+    padding: 91px 84px 67px;
   }
 
   .tariffs__table {
@@ -254,20 +256,13 @@
 }
 @media only screen and (min-width:@full-tablet-width) and (min-width:@full-desktop-width) {
   .tariffs {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
-@media (min-width: @full-tablet-width) and (min-width: @full-desktop-width) {
-  .tariffs {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 50px;
+    padding-right: 30px;
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .tariffs {
-    padding-top: 150px;
-    padding-bottom: 96px;
+    padding: 150px 30px 100px 48px;
   }
 
   .tariffs td {
@@ -279,5 +274,15 @@
   .tariffs__option {
     font-size: @font-size-medium;
     line-height: 1.66667;
+  }
+
+  .svg-icon-yes {
+    width: 31px;
+    height: 21px;
+    fill: @color-icon-yes;
+  }
+
+  .box--gray--tariffs {
+    margin-top: -52px;
   }
 }

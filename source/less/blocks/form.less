@@ -69,6 +69,14 @@
   text-transform: uppercase;
 }
 
+.form__btn-wrap .form__footnote--desktop {
+  display: none;
+}
+
+.form__btn-wrap .form__footnote--tablet {
+  display: block;
+}
+
 .form__color {
   color: @pink-color;
 }
@@ -259,6 +267,11 @@
   }
 }
 @media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
+  .form {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .form__fieldset {
     width: 100%;
   }
@@ -529,5 +542,14 @@
 
   .form-group--reverse .form-group__input {
     padding-left: 18px;
+  }
+
+  .form__btn-wrap .form__footnote--tablet {
+    position: absolute;
+    visibility: hidden;
+  }
+
+  .form__btn-wrap .form__footnote--desktop {
+    display: block;
   }
 }

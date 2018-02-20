@@ -1,12 +1,16 @@
+
 mainApp();
 
 function mainApp() {
   var btns = document.querySelectorAll('.js-toggle');
   var menu = document.getElementById('nav');
+  var menuButton = document.getElementById('menu-button');
   var header = document.getElementById('header');
 
   header.classList.add('page-header--js');
-  header.classList.remove('page-header--active');
+  menuButton.classList.remove("page-header__btn-burger--hidden");
+
+   header.classList.remove('page-header--active');
 
   menu.classList.add('navigation--closed');
   menu.classList.add('navigation--positioned');
