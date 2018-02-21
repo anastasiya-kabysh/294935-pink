@@ -18,6 +18,10 @@
   line-height: 1.20833;
   font-weight: @font-weight-small;
 }
+
+.heading__title--form {
+  display: block;
+}
 @media only screen and (max-width:@tablet-width) and (-webkit-min-device-pixel-ratio:1.5), only screen and (max-width:@tablet-width) and (min-resolution:1.5dppx) {
   .heading__wrap--index {
     background-image: url(../img/intro/iphone-hand-mobile@2x.png), url("../img/bg/bg-back-mobile@2x.jpg");
@@ -26,12 +30,19 @@
   .heading__wrap {
     background-image: url("../img/bg/bg-back-mobile@2x.jpg");
   }
-
-  .heading__wrap--index {
-    background-image: url("../img/intro/iphone-hand-mobile@2x.png),url(../img/bg/bg-back-mobile@2x.jpg");
-  }
 }
 @media only screen and (max-width:@tablet-width) {
+  .heading__wrap {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1020px;
+    padding: 70px 20px 52px;
+    min-height: 234px;
+    background-image: url("../img/bg/bg-back-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center, top 0 left 50%;
+  }
+
   .heading__wrap--index {
     min-height: 458px;
     background-image: url(../img/intro/iphone-hand-mobile.png), url("../img/bg/bg-back-mobile.jpg");
@@ -40,21 +51,15 @@
     background-position: bottom 0 left 50%, 50% 50%;
   }
 
-  .heading__wrap {
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 1020px;
-    padding: 75px 20px 52px;
-    min-height: 395px;
-    background-image: url("../img/bg/bg-back-mobile.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom center, top 0 left 50%;
-  }
-
   .heading__title {
     display: none;
   }
-  .heading__title--photo{
+
+  .heading__title--photo {
+    display: block;
+  }
+
+  .heading__title--form {
     display: block;
   }
 }
@@ -84,18 +89,21 @@
   }
 
   .heading--index {
-    min-height: 617px;
-      padding-top: 68px;
-      padding-bottom: 35px;
+    min-height: 683px;
+    padding-bottom: 35px;
+    padding-top: 200px;
+    padding-left: 0;
     background-image: url(../img/intro/iphone-hand-tablet@1x.png), url("../img/bg/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat, repeat;
     background-size: auto 545px, cover;
     background-position: bottom 0 right 37px,50% 50%;
   }
-.heading--form{
-  padding-top: 45px;
+
+  .heading--form {
+    padding-top: 45px;
     padding-bottom: 70px;
-}
+  }
+
   .heading__wrap--index {
     width: 50%;
     padding-right: 10px;
@@ -110,9 +118,9 @@
 
   .heading__title--index {
     padding-left: 46px;
-padding-right: 44px;
-      font-size: 40px;
-      line-height: 1.2;
+    padding-right: 44px;
+    font-size: 40px;
+    line-height: 1.2;
   }
 }
 @media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
@@ -124,12 +132,14 @@ padding-right: 44px;
 }
 @media only screen and (min-width:@full-tablet-width) and (max-width:@desktop-width) and (min-width:@full-tablet-width) {
   .heading {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 41px;
+    padding-bottom: 80px;
+    padding-top: 108px;
   }
-  .heading--index{
-    padding-left: 70px;
-    padding-right: 40px;
+
+  .heading--index {
+    padding-right: 115px;
+    padding-top: 130px;
   }
 }
 @media only screen and (min-width:@full-desktop-width) and (min-width:@full-tablet-width) and (max-width:@desktop-width) {
@@ -156,9 +166,10 @@ padding-right: 44px;
     padding-bottom: 101px;
     background-position: top 0 left 50%;
   }
+
   .downloads,
   .heading__wrap {
-    padding-left: 49px;
+    padding-left: 21px;
     padding-right: 40px;
   }
 
@@ -199,18 +210,22 @@ padding-right: 44px;
   }
 
   .heading__title {
-    padding-left: 90px;
+    padding-left: 105px;
     padding-right: 90px;
     font-size: 50px;
     line-height: 1.2;
   }
-  .heading__title--photo{
-      padding-left: 82px;
+// .heading .heading__wrap--index{
+  // padding-left: 21px;
+    // padding-right: 40px;
+// }
+  .heading__title--photo {
+    padding-left: 106px;
   }
 
   .heading__title--index {
     width: 300px;
-    padding-left: 0;
+    padding-left: 62px;
     padding-right: 0;
     margin-bottom: 22px;
     margin-left: 0;

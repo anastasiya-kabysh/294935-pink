@@ -33,9 +33,11 @@
         .tariffs__input[id="toggle-tariffs-1"]:checked~.tariffs__table {
           transform: translateX(0%);
         }
-        .tariffs__input[id="toggle-tariffs-2"]:checked~.tariffs__table {
-          transform: translateX(-33.33%);
-        }
+
+
+        /* .tariffs__input[id="toggle-tariffs-2"]:checked~.tariffs__table { */
+        /* transform: translateX(-33.33%); */
+        /* } */
         .tariffs__input[id="toggle-tariffs-3"]:checked~.tariffs__table {
           transform: translateX(-66.66%);
         }
@@ -138,7 +140,7 @@
           </div>
         </div>
         <div id="menu-button" class="page-header__btn-burger page-header__btn-burger--show js-toggle page-header__btn-burger--hidden">
-          <span class="page-header-btn-burger__cross--index"></span>
+          <span class="page-header-btn-burger__cros page-header-btn-burger__cross--index"></span>
         </div>
         <nav id="nav" class="navigation navigation--positioned">
           <ul class="navigation__list">
@@ -164,19 +166,19 @@
         <div class="downloads">
           <div class="downloads__wrap"><a href="#" class="downloads__btn btn btn--download">Скачать приложение</a>
             <div class="downloads__link-wrap"><a href="#" title="itunes" class="downloads__link">apple
-              <svg class="svg-logo-apple" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
+              <svg class="svg-logo-apple" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="46.21px" height="56.753px" viewBox="0 0 46.21 56.753" enable-background="new 0 0 46.21 56.753" xml:space="preserve">
                 <path fill="#FFFFFF" d="M38.593,30.15c0.081,8.59,7.535,11.447,7.617,11.483c-0.062,0.202-1.19,4.073-3.927,8.072 c-2.365,3.457-4.82,6.901-8.688,6.973c-3.799,0.07-5.021-2.253-9.365-2.253c-4.344,0-5.702,2.182-9.298,2.32 c-3.733,0.142-6.576-3.739-8.961-7.184c-4.875-7.046-8.598-19.91-3.597-28.593c2.484-4.313,6.925-7.043,11.743-7.114 c3.666-0.069,7.126,2.466,9.366,2.466c2.241,0,6.444-3.049,10.865-2.601c1.85,0.077,7.044,0.747,10.38,5.629 C44.459,19.519,38.531,22.971,38.593,30.15 M31.453,9.062C33.435,6.662,34.769,3.323,34.405,0c-2.857,0.115-6.312,1.904-8.36,4.302 c-1.837,2.123-3.445,5.521-3.011,8.778C26.218,13.326,29.47,11.461,31.453,9.062"/>
               </svg>
             </a>
               <a href="#" title="android" class="downloads__link">android
-                <svg class="svg-logo-android" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
+                <svg class="svg-logo-android" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="42.084px" height="47.041px" viewBox="0 0 42.084 47.041" enable-background="new 0 0 42.084 47.041" xml:space="preserve">
                   <path fill="#A4C639" d="M34.144,14.009H7.945c-0.009,0.11-0.018,0.22-0.018,0.333v18.755c0,1.926,1.457,3.49,3.316,3.627v7.43 c0,1.594,1.291,2.885,2.885,2.885c1.593,0,2.885-1.291,2.885-2.885v-7.42h8.058v7.42c0,1.594,1.291,2.885,2.885,2.885 c1.595,0,2.886-1.291,2.886-2.885v-7.434c1.858-0.137,3.315-1.701,3.315-3.627V14.342C34.157,14.229,34.153,14.119,34.144,14.009z"/>
                   <path id="c-4-9-2-9-2-9" fill="#A4C639" d="M2.886,15.679L2.886,15.679c1.593,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.292,2.886-2.886,2.886l0,0C1.292,33.828,0,32.537,0,30.942V18.564C0,16.97,1.292,15.679,2.886,15.679z"/>
                   <path id="c-4-1-7-3-8-4" fill="#A4C639" d="M39.198,15.679L39.198,15.679c1.595,0,2.886,1.292,2.886,2.885v12.378 c0,1.595-1.291,2.886-2.886,2.886l0,0c-1.594,0-2.885-1.291-2.885-2.886V18.564C36.313,16.97,37.604,15.679,39.198,15.679z"/>
                   <path fill="#A4C639" d="M8.03,11.967h26.026c-0.039-2.783-1.234-5.322-3.187-7.275l2.446-4.235c0.082-0.146,0.031-0.331-0.112-0.415 c-0.146-0.084-0.331-0.034-0.415,0.111L30.416,4.26c-2.052-1.853-6.249-3.4-9.374-3.4l0,0c-3.016,0-7.322,1.547-9.374,3.4 L9.296,0.152C9.213,0.007,9.027-0.042,8.881,0.041C8.736,0.125,8.686,0.311,8.77,0.456l2.445,4.235 C9.265,6.645,8.068,9.184,8.03,11.967z M25.323,6.804c-0.002-0.805,0.664-1.46,1.488-1.462c0.826-0.002,1.494,0.648,1.498,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.49,1.462c-0.823,0.002-1.493-0.649-1.496-1.454 C25.323,6.81,25.323,6.807,25.323,6.804z M14.18,6.804c-0.001-0.805,0.665-1.46,1.489-1.462c0.824-0.002,1.494,0.648,1.497,1.454 c0,0.002,0,0.005,0,0.008c0.002,0.805-0.664,1.46-1.488,1.462c-0.825,0.002-1.495-0.649-1.498-1.454 C14.18,6.81,14.18,6.807,14.18,6.804z"/>
                 </svg></a>
               <a href="#" title="windows" class="downloads__link">windows
-                <svg class="svg-logo-microsoft" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
+                <svg class="svg-logo-microsoft" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="43.922px" height="41.992px" viewBox="0 0 43.922 41.992" enable-background="new 0 0 43.922 41.992" xml:space="preserve">
                   <g>
                     <path id="path5058" fill="#F05423" d="M20.874,19.953H0V0h20.874V19.953z"/>
                     <path id="path5060" fill="#84C441" d="M43.922,19.953H23.049V0h20.873V19.953z"/>
@@ -202,10 +204,10 @@
         <div class="container">
           <div class="advantages">
             <div class="advantages__item advantages__item--1">
-              <picture>
+              <picture class="advantages__img">
                 <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-1@1x.png 1x, img/features/iphone-screen-desktop-1@2x.png 2x">
                 <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-1@1x.png 1x, img/features/iphone-screen-tablet-1@2x.png 2x">
-                <img src="../img/features/iphone-screen-desktop-1@1x.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Поднимает настроение" class="advantages__img">
+                <img src="../img/features/iphone-screen-desktop-1@1x.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Поднимает настроение">
               </picture>
               <div class="advantages__content">
                 <h3 class="advantages__title">Поднимает настроение
@@ -215,10 +217,10 @@
               </div>
             </div>
             <div class="advantages__item advantages__item--2">
-              <picture>
+              <picture class="advantages__img">
                 <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-2@1x.png 1x, img/features/iphone-screen-desktop-2@2x.png 2x">
                 <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-2@1x.png 1x, img/features/iphone-screen-tablet-2@2x.png 2x">
-                <img src="../img/features/iphone-screen-desktop-2@1x.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Меняет мир вокруг" class="advantages__img">
+                <img src="../img/features/iphone-screen-desktop-2@1x.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Меняет мир вокруг">
               </picture>
               <div class="advantages__content">
                 <h3 class="advantages__title">Меняет мир вокруг
@@ -228,10 +230,10 @@
               </div>
             </div>
             <div class="advantages__item advantages__item--3">
-              <picture>
+              <picture class="advantages__img">
                 <source media="(min-width: 1020px)" srcset="img/features/iphone-screen-desktop-3@1x.png 1x, img/features/iphone-screen-desktop-3@2x.png 2x">
                 <source media="(min-width: 700px)" srcset="img/features/iphone-screen-tablet-3@1x.png 1x, img/features/iphone-screen-tablet-3@2x.png 2x">
-                <img src="../img/features/iphone-screen-mobile.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Заводит новых друзей" class="advantages__img">
+                <img src="../img/features/iphone-screen-desktop-3@1x.png" srcset="img/features/iphone-screen-mobile@2x.png 2x" alt="Заводит новых друзей">
               </picture>
               <div class="advantages__content">
                 <h3 class="advantages__title">Заводит новых друзей
@@ -339,7 +341,7 @@
                 <td data-option="Розовый фильтр">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <span class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </span>
@@ -348,7 +350,7 @@
                 <td data-option="Розовый фильтр">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <span class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </span>
@@ -358,7 +360,7 @@
                 <td data-option="Розовый фильтр">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <span class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </span>
@@ -370,7 +372,7 @@
                 </td>
                 <td data-option="Смайлики">
                   <div class="tariffs__icon tariffs__icon--false">Нет<span class="tariffs__icon-svg svg-icon-no">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                     </svg>
                     </span>
@@ -379,7 +381,7 @@
                 <td data-option="Смайлики">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <span class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </span>
@@ -388,7 +390,7 @@
                 <td data-option="Смайлики">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <span class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </span>
@@ -400,8 +402,8 @@
                 </td>
                 <td data-option="Комментарии">
                   <div class="tariffs__icon tariffs__icon--false">Нет
-                    <span span class="tariffs__icon-svg svg-icon-no">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <span class="tariffs__icon-svg svg-icon-no">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                     </svg>
                 </span>
@@ -410,7 +412,7 @@
                 <td data-option="Комментарии">
                   <div class="tariffs__icon tariffs__icon--false">Нет
                     <span class="tariffs__icon-svg svg-icon-no">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                    <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
                       <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
                     </svg>
                   </span>
@@ -419,7 +421,7 @@
                 <td data-option="Комментарии">
                   <div class="tariffs__icon tariffs__icon--true">Есть
                     <svg class="tariffs__icon-svg svg-icon-yes">
-                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                      <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.698px" height="16.09px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
                         <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
                       </svg>
                     </svg>
@@ -458,7 +460,7 @@
       </div>
       <div class="map">
         <div id="map" data-latitude="59.938794" data-longitude="30.323082" class="map__image" style="position: relative; overflow: hidden;">
-          <span class="svg-icon-map-marker"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
+          <span class="svg-icon-map-marker"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="35.983px" height="35.983px" viewBox="0 0 35.983 35.983" enable-background="new 0 0 35.983 35.983" xml:space="preserve">
             <circle fill="#FFFFFF" cx="17.991" cy="17.991" r="17.991"/>
             <circle fill="#D22856" cx="17.991" cy="17.991" r="7.866"/>
           </svg></span>
@@ -470,7 +472,7 @@
         <div class="page-footer__inner">
           <div class="page-footer__item page-footer__item--logo">
             <div class="logo"><a class="logo__link logo__link--footer">Pink
-            <span class="logo_tablet"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+            <span class="logo_tablet"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>
                 <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                 <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -545,7 +547,7 @@
           <div class="page-footer__item page-footer__item--copyright">
             <div class="copyright">
               <a href="https://htmlacademy.ru/" title="HTML Academy" class="copyright__link copiright__link--index">Разработано
-                <svg class="copyright__logo-svg" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
+                <svg class="copyright__logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                   <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
                 </svg></a>
             </div>
@@ -553,8 +555,8 @@
         </div>
       </div>
     </footer>
+    <script src="js/scripts/svg4everybody.js"></script>
+    <script src="js/app.min.js"></script>
   </body>
-  <script src="js/scripts/svg4everybody.js"></script>
-  <script src="js/app.min.js"></script>
 
 </html>
