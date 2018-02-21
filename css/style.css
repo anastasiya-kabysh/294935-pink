@@ -271,7 +271,7 @@ html {
 .container {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1020px;
+  max-width: 960px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -839,6 +839,8 @@ picture {
 @media only screen and (max-width: 659px) {
   .logo__link--header {
     width: 76px;
+    left: 7px;
+    top: -5px;
   }
 }
 @media only screen and (min-width: 660px) and (max-width: 959px) {
@@ -899,7 +901,7 @@ picture {
   }
 }
 .advantages {
-  padding-top: 75px;
+  padding-top: 80px;
   padding-right: 9px;
 }
 .advantages__item {
@@ -1920,7 +1922,7 @@ picture {
   .heading__wrap {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1020px;
+    max-width: 960px;
     padding: 70px 20px 52px;
     min-height: 234px;
     background-image: url("../img/bg/bg-back-mobile.jpg");
@@ -1950,6 +1952,8 @@ picture {
   }
   .heading__wrap {
     background-image: url("../img/bg/bg-back-mobile@2x.jpg");
+    background-size: 200%;
+    background-position: top;
   }
   .heading__wrap--index {
     background-image: url("../img/intro/iphone-hand-mobile@2x.png"), url("../img/bg/bg-back-mobile@2x.jpg");
@@ -1959,7 +1963,7 @@ picture {
   .heading {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1020px;
+    max-width: 960px;
     padding: 158px 20px 79px;
     min-height: 330px;
     background-image: url("../img/bg/bg-back-tablet@1x.jpg");
@@ -1999,7 +2003,7 @@ picture {
 }
 @media only screen and (min-width: 660px) and (max-width: 959px) and (min-width: 660px) and (max-width: 959px) {
   .heading {
-    min-width: 700px;
+    min-width: 660px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -2018,7 +2022,7 @@ picture {
 @media only screen and (min-width: 960px) and (min-width: 660px) and (max-width: 959px) {
   .downloads,
   .heading__wrap {
-    min-width: 700px;
+    min-width: 660px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -2061,7 +2065,7 @@ picture {
     bottom: 0;
     left: 50%;
     height: 645px;
-    width: 1020px;
+    width: 960px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     background-image: url("../img/intro/iphone-hand-desktop@1x.png");
@@ -2072,7 +2076,7 @@ picture {
   .heading__wrap {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1020px;
+    max-width: 960px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -2576,7 +2580,7 @@ picture {
 .photo__identifier-wrap {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1020px;
+  max-width: 960px;
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
@@ -2718,7 +2722,7 @@ picture {
             justify-content: flex-end;
   }
   .photo__identifier-wrap {
-    min-width: 700px;
+    min-width: 660;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -3141,6 +3145,9 @@ picture {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+.tariffs__icon svg {
+  display: inline-block;
+}
 .svg-icon-no {
   width: 27px;
   height: 27px;
@@ -3183,6 +3190,7 @@ picture {
   .tariffs {
     overflow: hidden;
     padding-left: 20px;
+    padding-right: 20px;
   }
   .tariffs__table {
     position: relative;
@@ -3375,8 +3383,8 @@ picture {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 46px;
-  padding-right: 46px;
+  padding-left: 38px;
+  padding-right: 56px;
 }
 .downloads__link {
   font: 0/0 a;
@@ -3457,7 +3465,7 @@ picture {
 @media only screen and (max-width: 659px) and (min-width: 660px) and (max-width: 959px) {
   .downloads,
   .heading__wrap {
-    min-width: 700px;
+    min-width: 660px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -3472,7 +3480,7 @@ picture {
 @media only screen and (min-width: 960px) and (min-width: 660px) and (max-width: 959px) {
   .downloads,
   .heading__wrap {
-    min-width: 700px;
+    min-width: 660px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -3481,7 +3489,7 @@ picture {
   .downloads {
     margin: 0 auto;
     min-width: 320px;
-    max-width: 1020px;
+    max-width: 960px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -3772,13 +3780,13 @@ picture {
 .container {
   margin: 0 auto;
   min-width: 320px;
-  max-width: 1020px;
+  max-width: 960px;
   padding-left: 20px;
   padding-right: 20px;
 }
 @media only screen and (min-width: 660px) and (max-width: 959px) {
   .container {
-    min-width: 700px;
+    min-width: 660px;
     padding-left: 40px;
     padding-right: 40px;
   }
