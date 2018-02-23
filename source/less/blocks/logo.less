@@ -2,17 +2,6 @@
   position: relative;
   color: @white-color;
   width: 150px;
-  left: -24px;
-}
-
-.logo--photo {
-  left: -35px;
-  top: -3px;
-}
-
-.logo--form {
-  left: -36px;
-  top: -4px;
 }
 
 .logo__link--active {
@@ -24,10 +13,6 @@
   color: transparent;
   text-shadow: none;
   display: block;
-}
-
-.logo_tablet {
-  margin-left: 24px;
 }
 
 .logo__glasses,
@@ -43,7 +28,7 @@
 }
 
 .logo__svg {
-  width: 220.3px;
+  width: 186.3px;
   height: 40.375px;
 }
 
@@ -94,13 +79,15 @@
   fill: rgba(210,40,86,.3);
 }
 @media only screen and (max-width: @tablet-width) {
-  .logo__link--header {
-    width: 76px;
-    left: 7px;
-    top: -5px;
-  }
+  // .logo__link--header {
+  //   width: 76px;
+  // }
 }
 @media only screen and (min-width: @full-tablet-width) and (max-width:@desktop-width) {
+  .logo_tablet {
+    padding-left: 20px;
+  }
+
   .logo__letter--mobile {
     display: none;
   }
@@ -109,23 +96,6 @@
   .logo__letter--tablet-desktop {
     display: block;
   }
-
-  .logo--index {
-    left: -24px;
-  }
-
-  .logo--photo {
-    left: -36px;
-  }
-
-  .logo--form {
-    left: -36px;
-  }
-
-  .logo__footer--form {
-    left: 3px;
-    top: -18px;
-  }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .logo__letter--mobile,
@@ -133,21 +103,8 @@
     display: none;
   }
 
-  .logo--index {
-    left: -16px;
-  }
-  .logo--photo {
-    left: -16px;
-      top: -3px;
-  }
-  .logo--form {
-    left: -18px;
-    top: -1px;
-  }
-
   .logo_desktop {
     display: none;
-    margin-left: -11px;
   }
 
   .logo__letter--tablet-desktop {

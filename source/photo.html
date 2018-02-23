@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
 
-  <body>
+  <body class="page-foto">
     <style>
       .add-photo__input[id="tool-1"]:checked+.add-photo__label .add-photo__scale--1,
       .add-photo__input[id="tool-2"]:checked+.add-photo__label .add-photo__scale--2,
@@ -138,7 +138,7 @@
       </div>
     </header>
     <main class="page-content">
-      <div class="heading heading--page">
+      <div class="heading heading--foto">
         <div class="heading__wrap">
           <h2 class="heading__title heading__title--photo">Фотографии<br>пользователей
           </h2>
@@ -160,7 +160,8 @@
               <a href="#" title="Панорама дня" class="photo__photo-link">
                 <picture class="photo__img photo__img--best">
                   <source media="(min-width: 960px)" srcset="img/photos/panorama-desktop.jpg 1x, img/photos/panorama-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photos/panorama-tablet.jpg 1x, img/photos/panorama-tablet@2x.jpg 2x"><img src="../img/photos/panorama-mobile@1x.jpg" srcset="img/photos/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+                  <source media="(min-width: 660px)" srcset="img/photos/panorama-tablet.jpg 1x, img/photos/panorama-tablet@2x.jpg 2x">
+                  <img src="../img/photos/panorama-mobile@1x.jpg" srcset="img/photos/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
                 </picture>
               </a>
               <div class="photo__inner photo__inner--best">
@@ -182,7 +183,7 @@
               </div>
             </article>
           </div>
-          <div class="container">
+          <div class="container--foto">
             <div class="photos__grid">
               <div class="photos__item">
                 <article class="photo">
@@ -357,18 +358,17 @@
         </div>
       </div>
       <div class="box box--gray box--no-oblique box--no-desktop">
-        <div class="container">
-          <form action="/echo" method="post">
-            <div class="add-photo">
-              <div class="add-photo__image-wrap">
-                <picture class="add-photo__image">
-                  <source media="(min-width: 960px)" srcset="img/photos/photo-7-desktop.jpg 1x, img/photos/photo-7-desktop@2x.jpg 2x">
-                  <source media="(min-width: 660px)" srcset="img/photos/photo-7-tablet.jpg 1x, img/photos/photo-7-tablet@2x.jpg 2x"><img src="img/photos/photo-7-mobile.jpg" srcset="img/photos/photo-7-mobile@2x.jpg 2x" alt="edit photo">
-                </picture>
-              </div>
-              <div class="add-photo__wrap-tools">
-                <div class="add-photo__tools"><input type="radio" name="tool" id="tool-1" checked="checked" class="add-photo__input add-photo__input--crop">
-                  <label for="tool-1" class="add-photo__label">Crop<span class="add-photo__svg-wrap">
+        <form action="/echo" method="post">
+          <div class="add-photo">
+            <div class="add-photo__image-wrap">
+              <picture class="add-photo__image">
+                <source media="(min-width: 960px)" srcset="img/photos/photo-7-desktop.jpg 1x, img/photos/photo-7-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photos/photo-7-tablet.jpg 1x, img/photos/photo-7-tablet@2x.jpg 2x"><img src="img/photos/photo-7-mobile.jpg" srcset="img/photos/photo-7-mobile@2x.jpg 2x" alt="edit photo">
+              </picture>
+            </div>
+            <div class="add-photo__wrap-tools">
+              <div class="add-photo__tools"><input type="radio" name="tool" id="tool-1" checked="checked" class="add-photo__input add-photo__input--crop">
+                <label for="tool-1" class="add-photo__label">Crop<span class="add-photo__svg-wrap">
                     <span class="add-photo__tool-svg add-photo__tool-svg--crop svg-icon-editor-crop">
                       <svg version="1.0" id="Layer_crop" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewbox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -376,7 +376,7 @@
                       </svg>
                     </span></span><span class="add-photo__scale add-photo__scale--1"><span class="add-photo__toggle"></span></span>
                   </label><input type="radio" name="tool" id="tool-2" class="add-photo__input add-photo__input--fill">
-                  <label for="tool-2" class="add-photo__label">Fill<span class="add-photo__svg-wrap">
+                <label for="tool-2" class="add-photo__label">Fill<span class="add-photo__svg-wrap">
                     <span class="add-photo__tool-svg add-photo__tool-svg--fill svg-icon-editor-fill">
                       <svg version="1.0" id="Layer_fill" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewbox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
                         <path fill="none" d="M0,0h48v48H0V0z"/>
@@ -385,7 +385,7 @@
                       </svg>
                     </span></span><span class="add-photo__scale add-photo__scale--2"><span class="add-photo__toggle"></span></span>
                   </label><input type="radio" name="tool" id="tool-3" class="add-photo__input add-photo__input--contrast">
-                  <label for="tool-3" class="add-photo__label">Contrast<span class="add-photo__svg-wrap">
+                <label for="tool-3" class="add-photo__label">Contrast<span class="add-photo__svg-wrap">
                     <span class="add-photo__tool-svg add-photo__tool-svg--contrast svg-icon-editor-contrast">
                       <svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
                         <path d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
@@ -393,24 +393,22 @@
                       </svg>
                     </span></span><span class="add-photo__scale add-photo__scale--3"><span class="add-photo__toggle"></span></span>
                   </label>
-                </div>
-                <div class="add-photo__btns-wrap">
-                  <button type="submit" class="add-photo__btn btn btn--submit">Запостить
+              </div>
+              <div class="add-photo__btns-wrap">
+                <button type="submit" class="add-photo__btn btn btn--submit">Запостить
                   </button>
-                  <button type="reset" class="add-photo__btn btn btn--reset">Отмена
+                <button type="reset" class="add-photo__btn btn btn--reset">Отмена
                   </button>
-                </div>
               </div>
             </div>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </main>
     <footer class="page-footer false">
-      <div class="container">
-        <div class="page-footer__inner page-footer__inner--photo">
-          <div class="page-footer__item page-footer__item--logo">
-            <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink  <span class="logo_tablet"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
+      <div class="page-footer__inner page-footer__inner--photo">
+        <div class="page-footer__item page-footer__item--logo">
+          <div class="logo"><a href="index.html" class="logo__link logo__link--active logo__link--footer">Pink  <span class="logo_tablet"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
                 <g>
                   <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
                   <path fill="#283645" d="M93.603,18.5c0-0.708,0.579-1.288,1.255-1.288c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.287-1.288,1.287c-0.676,0-1.255-0.579-1.255-1.287V18.5z"/>
@@ -451,11 +449,11 @@
               </svg>
   </span>
   </a>
-            </div>
           </div>
-          <div class="page-footer__item page-footer__item--social page-footer__item--social-photo">
-            <div class="social">
-              <a href="#" title="twitter" class="social__link">twitter
+        </div>
+        <div class="page-footer__item page-footer__item--social page-footer__item--social-photo">
+          <div class="social">
+            <a href="#" title="twitter" class="social__link">twitter
               <svg class="social__svg social__svg--twitter svg-icon-twitter">
                 <svg version="1.0" id="Layer_twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewbox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
                   <g id="W6EeEF_1_">
@@ -466,28 +464,27 @@
                 </svg>
               </svg>
               </a>
-              <a href="#" title="facebook" class="social__link">facebook
+            <a href="#" title="facebook" class="social__link">facebook
               <svg class="social__svg social__svg--facebook svg-icon-facebook">
                 <svg version="1.0" id="Layer_facebook" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.673px" height="18.944px" viewbox="0 0 8.673 18.944" enable-background="new 0 0 8.673 18.944" xml:space="preserve">
                   <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
                 </svg>
 
               </svg></a>
-              <a href="#" title="youtube" class="social__link">youtube
+            <a href="#" title="youtube" class="social__link">youtube
               <svg class="social__svg social__svg--youtube svg-icon-youtube">
                 <svg version="1.0" id="Layer_youtube" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.64px" height="13.96px" viewbox="0 0 14.64 13.96" enable-background="new 0 0 14.64 13.96" xml:space="preserve">
                   <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
                 </svg>
               </svg></a>
-            </div>
-
           </div>
-          <div class="page-footer__item page-footer__item--copyright">
-            <div class="copyright"><a href="#" title="HTML Academy" class="copyright__link copyright__link--photo">Разработано
+
+        </div>
+        <div class="page-footer__item page-footer__item--copyright">
+          <div class="copyright"><a href="#" title="HTML Academy" class="copyright__link copyright__link--photo">Разработано
               <svg class="copyright__logo-svg" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
                 <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.013,1.415l5.904,3.513l-0.86,0.507l-5.031-2.992l-0.013,1.415l3.827,2.275l-0.782,0.523l-3.032-1.787 l-0.013,1.413l1.852,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.015,1.044l-7.941-4.728L5.395,19.65 l7.979,4.796l0.017,1.076l-7.972-4.741l-0.013,1.415l8.021,4.821l0.045,0.026l8.143-4.872v-1.268l-0.011-0.148v-3.761l3.415-2.036 v10.02L13.472,31.85L1.925,24.979V15.127z"/>
               </svg></a>
-            </div>
           </div>
         </div>
       </div>

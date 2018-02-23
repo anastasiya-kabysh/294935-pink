@@ -13,7 +13,7 @@
 .page-header--active {
   background-color: @dark-blue-color;
   position: relative;
-  margin-bottom: -63px;
+  margin-bottom: -60px;
 }
 
 .page-header__inner {
@@ -24,14 +24,14 @@
 }
 
 .page-header__logo {
-  padding-top: 21px;
-  min-height: 66px;
+  padding-top: 24px;
+  min-height: 70px;
 }
 
 .page-header__btn-burger {
   position: absolute;
   top: 0;
-  right: 20px;
+  right: -50px;
   display: none;
   height: 66px;
   width: 90px;
@@ -53,7 +53,9 @@
   position: absolute;
   content: "";
   height: 4px;
+  left: 10px;
   width: 50px;
+  margin-left: -10px;
   background-color: #fff;
   transition: all 0.35s ease-in-out;
 }
@@ -73,7 +75,6 @@
 .page-header__btn-burger span {
   top: 50%;
   transform: translateY(-50%);
-  right: 33px;
 }
 
 .page-header__btn-burger span:after {
@@ -95,7 +96,6 @@
 .page-header__btn-burger--active span:after,
 .page-header__btn-burger--active span:before {
   top: 0;
-  right: -3px;
   width: 30px;
   transition: all 0.35s;
 }
@@ -107,28 +107,10 @@
 .page-header__btn-burger--active span:after {
   transform: rotate(-45deg);
 }
-
-.page-header__btn-burger .page-header-btn-burger__cross--index {
-  left: 71px;
-}
-
-.page-header .page-header-btn-burger__cross--photo {
-  top: 45%;
-  right: -23px;
-}
 @media only screen and (max-width: @tablet-width) {
   .page-header,
   .page-header__inner {
     min-height: 66px;
-  }
-
-  .page-header-btn-burger__cross--photo {
-    right: 14px;
-  }
-
-  .page-header__btn-burger .page-header-btn-burger__cross--form {
-    left: 80px;
-    top: 29px;
   }
 }
 @media only screen and (min-width: @full-tablet-width) and (max-width:@desktop-width) {
@@ -138,7 +120,7 @@
 
   .page-header--active {
     background-color: @dark-blue-color;
-    margin-bottom: -62px;
+    margin-bottom: -65px;
   }
 
   .page-header__inner {
@@ -146,21 +128,16 @@
   }
 
   .page-header__logo {
-    padding-top: 27px;
     min-height: 110px;
   }
 
   .page-header__btn-burger {
     height: 110px;
+    right: -50px;
   }
-
-  .page-header__btn-burger span {
-    right: 49px;
-  }
-
-  .page-header__btn-burger .page-header-btn-burger__cross--form {
-    left: 85px;
-  }
+  // .page-header__btn-burger span {
+  //   right: 49px;
+  // }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .logo__letter--mobile,

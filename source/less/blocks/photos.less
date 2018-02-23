@@ -5,7 +5,7 @@
 .photos__grid {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   margin-left: -10px;
   margin-right: -10px;
 }
@@ -19,15 +19,13 @@
   flex-grow: 0;
   flex-shrink: 0;
   width: 100%;
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
   display: flex;
   justify-content: center;
 }
 
 .photo {
-  min-width: 280px;
-  max-width: 280px;
   background-color: @grey-color;
   font-size: 14px;
   color: @dark-blue-color;
@@ -78,7 +76,8 @@
 .photo__inner--best {
   max-width: 314px;
   padding: 13px 20px 18px;
-  margin-left: 16px;
+  margin: 0 auto;
+
   background-color: @grey-color;
 }
 
@@ -87,7 +86,9 @@
   width: 100%;
   height: auto;
 }
-
+.photo__img img{
+  max-width: 100%;
+}
 .photo__img--best {
   height: 138px;
 }
@@ -159,7 +160,7 @@
     margin-bottom: -20px;
   }
 
-  .photo__img--best {
+  .photo__img--best{
     height: 509px;
   }
 
@@ -253,7 +254,6 @@
     flex-wrap: wrap;
     min-height: auto;
     padding-bottom: 15px;
-    margin-left: 42px;
     padding-bottom: 14px;
     padding-top: 21px;
   }
@@ -275,6 +275,10 @@
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
+  .photos__grid{
+    width: 940px;
+    margin: 0 auto;
+  }
   .photos {
     margin-bottom: -54px;
   }
@@ -286,20 +290,17 @@
   .photos__item {
     flex-grow: 0;
     flex-shrink: 0;
-    width: 33.33333%;
+    width: 300px;;
     padding-left: 10px;
     padding-right: 10px;
     display: flex;
+    padding: 0;
     margin-bottom: 54px;
   }
 
   .photo__identifier-wrap {
     padding-left: 40px;
     padding-right: 40px;
-  }
-
-  .photo {
-    max-width: 300px;
   }
 
   .photo__identifier {
@@ -317,7 +318,9 @@
   .photo--best .photo__footer {
     padding-right: 34px;
   }
-
+  .photo--best picture{
+    text-align: center;
+  }
   .photo__inner {
     padding: 22px 26px 25px;
   }
@@ -325,7 +328,6 @@
   .photo__inner--best {
     max-width: 940px;
     padding-bottom: 14px;
-    margin-left: 60px;
   }
 
   .photo__img--best {

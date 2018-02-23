@@ -1,6 +1,6 @@
 .reviews {
   padding-top: 35px;
-    padding-bottom: 33px;
+  padding-bottom: 33px;
 }
 
 .reviews__arrow,
@@ -42,7 +42,7 @@
 }
 
 .comment {
-  max-width: 700px;
+  max-width: 660px;
   margin: 0 auto;
   text-align: center;
   color: @dark-blue-color;
@@ -51,6 +51,8 @@
 .comment__text {
   font-size: @font-size-small;
   line-height: 2.14286;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .comment__author {
@@ -94,15 +96,12 @@
 
   .reviews__toggles {
     margin-top: 37px;
-margin-left: -49px;
   }
 
   .comment__text {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     font-size: @font-size-medium;
     line-height: 1.66667;
-    margin-left: -32px;
-    margin-right: 19px;
   }
 
   .comment__text:before {
@@ -115,7 +114,6 @@ margin-left: -49px;
 
   .comment__author {
     display: block;
-        margin-right: 46px;
     margin-bottom: 7px;
     font-size: 20px;
     line-height: 1.5;
@@ -124,17 +122,15 @@ margin-left: -49px;
   .comment__about-author {
     font-size: @font-size-small;
     line-height: 2.14286;
-        margin-left: -49px;
   }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .reviews {
     position: relative;
-    padding-top: 167px;
-    padding-bottom: 35px;
+    padding: 171px 11px 35px 45px;
     background-image: url("../img/bg/quotes.svg");
     background-repeat: no-repeat;
-    background-position: 51% 72px;
+    background-position: 52% 72px;
     z-index: 2;
   }
 
@@ -169,13 +165,13 @@ margin-left: -49px;
   .reviews__toggle:before {
     left: 5px;
     transform: rotate(135deg);
-    left: 15px;
+    left: -11px;
   }
 
   .reviews__toggle:after {
     right: 5px;
     transform: rotate(-45deg);
-    right: -5px;
+    right: -36px;
   }
 
   .reviews__input:first-of-type:checked~.reviews__toggles .reviews__toggle--3:before,

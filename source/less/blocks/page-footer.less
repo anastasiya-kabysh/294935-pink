@@ -3,6 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  max-width: 960px;
+  padding: 0 0;
+  margin: 0 auto;
 }
 
 .logo_desktop svg {
@@ -16,7 +19,6 @@
   .page-footer__item {
     margin-bottom: 38px;
   }
-
   .page-footer__item--copyright {
     margin-bottom: 55px;
   }
@@ -35,50 +37,10 @@
     padding-top: 35px;
     padding-bottom: 25px;
   }
-
-  .page-footer__item--social {
-    margin-top: 4px;
-    margin-right: 83px;
+  .page-footer__item--copyright{
+        padding-bottom: 15px;
   }
 
-  .page-footer__item--logo {
-    margin-bottom: 26px;
-  }
-
-  .page-footer__item--copyright {
-    margin-bottom: 10px;
-  }
-
-  .logo_tablet svg {
-    position: absolute;
-    left: -3px;
-    top: -18px;
-  }
-
-  .logo_desktop .logo_desktop--photo {
-    position: absolute;
-    left: 28px;
-    top: -20px;
-  }
-
-  .page-footer__item--social {
-    margin-bottom: 26px;
-  }
-
-  .page-footer__item--social-photo {
-    margin-top: 4px;
-    margin-right: 17px;
-  }
-
-  .page-footer__item--social-form {
-    margin-top: 4px;
-    margin-right: 23px;
-  }
-
-  .copyright__link--photo {
-    left: 4px;
-    top: 5px;
-  }
 }
 @media only screen and (min-width: @full-desktop-width) {
   .page-footer__inner {
@@ -88,14 +50,9 @@
     padding-bottom: 65px;
   }
 
-  .page-footer__inner--photo {
-    margin-right: 10px;
-    margin-left: -10px;
-  }
-
-  .page-footer__item--logo {
-    margin-top: -25px;
-  }
+.page-footer__item--logo{
+      margin-top: -27px;
+}
 
   .logo_tablet {
     display: none;
@@ -103,13 +60,14 @@
 
   .logo_desktop {
     display: block;
-    margin-left: 34px;
   }
 
+
   .page-footer__item--social {
-    margin-top: 5px;
     margin-left: 18px;
+    margin-top: 5px;
   }
+
 
   .page-footer__item--copyright {
     margin-bottom: 8px;
